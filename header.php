@@ -54,19 +54,10 @@ for (i = 0; i < coll.length; i++) {
 <!-- Page header logo-->
         
 		<div class="container-fluid bg-black">
-		  <a href="https://techhobbyist.co.uk"/><img src="<?php the_field ('site_logo_desktop', 'option');?>" class="img-fluid bg-dark border-0"</></a>
+      <?php get_template_part('includes/section','logo');?>
+      <?php get_template_part('includes/section','main_nav');?>
+</div>
 
-<div class="topnav">
-	<?php
-	wp_nav_menu(
-		array(
-		'theme_location' => 'primary',
-		'menu_class' => 'topnav border border-light' 
-		)
-		);
-	?>
-	</div>
-		</div>
         
 
 
