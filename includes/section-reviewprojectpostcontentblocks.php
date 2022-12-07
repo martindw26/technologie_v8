@@ -101,7 +101,7 @@ $product_url = get_sub_field('product_url');
 $affiliate_tracking_parameter = get_sub_field('affiliate_tracking_parameter');
 // Generate the affiliate tracked link
 $affiliate_link = $product_url . "?" . $affiliate_tracking_parameter;
-$currency = get_sub_field('currency');
+$afcurrency = get_sub_field('currency');
 //Handles the currecy symbol selection
 
 if($afcurrency == 'GBP') {
@@ -122,7 +122,7 @@ $afcurrency = '&#8377';
 <tr>
 <th scope="row"></th>
 <td class="border-bottom border-secondary"><?php echo $afretailer['label'];?></td>
-<td class="border-bottom border-secondary"><?php echo $afcurrency;?><?php echo $Price;?></td>
+<td class="border-bottom border-secondary"><?php echo $afcurrency;?><?php echo $afPrice;?></td>
 <td class="border-bottom border-secondary"><?php echo $afcondition;?></td>
 <td class="border-bottom border-secondary"><button type="button" class="btn btn-success float-end "><a class="text-white text-decoration-none" href="<?php echo $affiliate_link; ?>" target="_blank"></>Buy Now</a></button></td>
 </tr>
