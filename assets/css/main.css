@@ -120,6 +120,38 @@ p.header-social{ background-color: black;}
   padding: 2rem 0;
 }
 
+/*logo resposive CSS */
+
+@media (min-width: 768px) {
+  .mobile-logo{
+    display: none;
+
+  }
+}
+
+@media (max-width:480px ){
+.mobile-logo{
+  display: block;
+
+}
+}
+
+@media (min-width: 768px) {
+.desktop-logo{
+  display: block;
+
+}
+}
+
+@media (max-width:480px ){
+.desktop-logo{
+display: none;
+
+}
+}
+
+/*End logo responsive css*/
+
 /* Style the top navigation bar */
 
 .topnav {
@@ -155,7 +187,7 @@ p.header-social{ background-color: black;}
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
-    display: block;
+    display: flex;
   }
 }
 
@@ -168,11 +200,17 @@ p.header-social{ background-color: black;}
   }
   .topnav.responsive a {
     float: none;
-    display: block;
+    display: flex;
     text-align: left;
   }
 }
 
+
+@media screen and (max-width: 600px) {
+ul#menu-primary {
+  display: contents!important;
+}
+}
 
 .menu-item, .menu-item-type-post_type, .menu-item-object-post, .menu-item-1112 {
     list-style-type: none;
