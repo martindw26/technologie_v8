@@ -77,7 +77,7 @@ $Product = get_field('review_product');
 
 
 <!--Price list block block TRACKED -->
-<?php if (get_row_layout() == 'buy_now_list'):?>	
+<?php if (get_row_layout() == 'buy_now_list_tracked'):?>	
 <div class="container-fluid p-2 bg-dark text-white text-centert">
 <h4>Where to buy a <?php the_field('review_product'); ?></h4> 
 </div>
@@ -87,16 +87,16 @@ $Product = get_field('review_product');
 <img class="img-fluid p-1" src="<?php echo get_the_post_thumbnail( $page->ID, '' ); ?>"/>
 </div>
 <div class="col">
-<?php if(have_rows('buy_now')):?>
+<?php if(have_rows('buy_now_tracked')):?>
 <table class="table table-borderless table-dark">
 <caption>
 <p>This site contains affiliate links to products. We may receive a commission for purchases made through these links. Please also report price issues at <a class="text-muted font-weight-ligh" href="mailto:data@techhobbyist.co.uk?subject=Price issue report">Report Price Issues</a></p>
 </caption>
-<?php while( have_rows('buy_now')): the_row();?>
+<?php while( have_rows('buy_now_tracked')): the_row();?>
 <?php
-$retailer = get_sub_field('dir_retailer');
-$Price = get_sub_field('price');
-$condition = get_sub_field('condition');
+$afretailer = get_sub_field('af_dir_retailer');
+$afPrice = get_sub_field('af_price');
+$afcondition = get_sub_field('af_condition');
 $product_url = get_sub_field('product_url');
 $affiliate_tracking_parameter = get_sub_field('affiliate_tracking_parameter');
 // Generate the affiliate tracked link
@@ -104,26 +104,26 @@ $affiliate_link = $product_url . "?" . $affiliate_tracking_parameter;
 $currency = get_sub_field('currency');
 //Handles the currecy symbol selection
 
-if($currency == 'GBP') {
-$currency = '&#163';
-} else if($currency == 'USD') {
+if($afcurrency == 'GBP') {
+$afcurrency = '&#163';
+} else if($afcurrency == 'USD') {
 $currency = '&#36';
-} else if($currency == 'Euro') {
+} else if($afcurrency == 'Euro') {
 $currency = '&#8364';
-} else if($currency == 'JPY') {
+} else if($afcurrency == 'JPY') {
 $currency = '&#165';
-} else if($currency == 'KWR') {
+} else if($afcurrency == 'KWR') {
 $currency = '&#8361';
-} else if($currency == 'INR') {
-$currency = '&#8377';
+} else if($afcurrency == 'INR') {
+$afcurrency = '&#8377';
 }
 ?>
 <tbody>
 <tr>
 <th scope="row"></th>
-<td class="border-bottom border-secondary"><?php echo $retailer['label'];?></td>
-<td class="border-bottom border-secondary"><?php echo $currency;?><?php echo $Price;?></td>
-<td class="border-bottom border-secondary"><?php echo $condition;?></td>
+<td class="border-bottom border-secondary"><?php echo $afretailer['label'];?></td>
+<td class="border-bottom border-secondary"><?php echo $afcurrency;?><?php echo $Price;?></td>
+<td class="border-bottom border-secondary"><?php echo $afcondition;?></td>
 <td class="border-bottom border-secondary"><button type="button" class="btn btn-success float-end "><a class="text-white text-decoration-none" href="<?php echo $affiliate_link; ?>" target="_blank"></>Buy Now</a></button></td>
 </tr>
 </tbody>
