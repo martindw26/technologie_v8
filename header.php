@@ -35,7 +35,7 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
-<?php get_template_part('includes/section','adshead');?>
+<?php the_field( 'mpu_bottom_slot_head_script','option' ); ?>
       
 </head>
 
