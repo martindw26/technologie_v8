@@ -1,7 +1,7 @@
 <!-- MPU Bottom ad head script -->
 <?php 
-$MPU_bottom_ad_script = get_field ( 'mpu_bottom_slot_head_script','option' );
-echo $MPU_bottom_ad_script;
+the_field ( 'mpu_bottom_slot_head_script','option' );
+
 ?>
 <!-- END MPU Bottom ad head script -->
 
