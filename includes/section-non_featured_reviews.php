@@ -14,10 +14,12 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Right small block posts projects loop begins here
+		$sticky = get_option('sticky_posts');
                                           $condition = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
                                                 "orderby"             => "date",
+												'post__in' 			=> $sticky,
                                                 "posts_per_page"      => 1,
 												"offset"	         =>  1,
 		              							'tag__not_in' => array( 62 ),
