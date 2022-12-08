@@ -5,9 +5,6 @@
 <?php get_header();?>
 
 
-                        <!-- Featured Post-->
-	       		<?php get_template_part('includes/section','hp_featured_slider');?>
-                        <!-- End Featured Post-->
 
 				<!-- Header adslot-->
 	       		<?php get_template_part('includes/section','top_header_slot_ad');?>
