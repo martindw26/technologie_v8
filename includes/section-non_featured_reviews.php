@@ -50,7 +50,7 @@
 		<div class="card-text text-muted small">
 							Article by: <i><?php echo get_the_author();?></i>,  Posted: <i><?php echo get_the_date();?></i><?php if($read_time):?> | <?php echo $read_time ?><?php endif ?></i>
 						</div><br>
-
+						<p class="mb-3">&#34;<?php echo excerpt(25);?>&#34;</p>
     <a href="<?php the_permalink() ?>" class="btn btn-dark text-white">Read More</a>
   </div>
 </div>
