@@ -35,6 +35,7 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
+<?php get_template_part('includes/section','adshead');?>
       
 </head>
 
