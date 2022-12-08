@@ -73,6 +73,7 @@
                                                 "orderby"            => "date",
                                                 "posts_per_page"     => 3,
 		             							"offset"	         => 1,
+												'paged' 			=> get_query_var('paged'),
 		              							'tag__not_in' => array( 62),
                                                 'category__in' => array( 2 )
                                           );                                           
