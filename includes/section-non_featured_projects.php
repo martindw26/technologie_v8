@@ -1,5 +1,5 @@
 <div class="container">
-	<h2 class=" post_block_title text-dark">Latest <i>projects</i></h2>
+	<h2 class=" post_block_title text-dark">Latest <i>Reviews</i></h2>
 </div>
 <div class="container pt-lg-4 pb-lg-4">
 	<div class="row">
@@ -19,8 +19,8 @@
                                                 "post_status"         => "publish",
                                                 "orderby"             => "date",
                                                 "posts_per_page"      => 1,
-		              							'tag__not_in' => array( 62),
-                                                'category__in' => array( 3 )
+		              							'tag__not_in' => array( 62 ),
+                                                'category__in' => array( 2 )
                                           );                                           
                                           $block1 = new WP_Query ($condition);
                                           if ($block1->have_posts()) :
@@ -68,13 +68,13 @@
 		endif; ?>
 		<?php // Left block posts projects loop begins here
                                           $condition = array(
-                                                "post_type"             => "post",
-                                                "post_status"           => "publish",
-                                                "orderby"             	=> "date",
-                                                "posts_per_page"      	=> 3,
-		             							"offset"	           	=> 1,
+                                                "post_type"          => "post",
+                                                "post_status"        => "publish",
+                                                "orderby"            => "date",
+                                                "posts_per_page"     => 3,
+		             							"offset"	         => 0,
 		              							'tag__not_in' => array( 62),
-                                                'category__in' => array( 3 )
+                                                'category__in' => array( 2 )
                                           );                                           
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
@@ -83,15 +83,15 @@
 <div class="non_featured_block_home_page">
 
 
-			<div class="container"><!-- small non-fetured block-->
+<div class="container shadow-sm p-3 mb-2 bg-body rounded"><!-- small non-fetured block-->
 
-  <div class="row">
+<div class="row">
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
-    <div class="col"><img class="img-fluid featured rounded rounded-1 shadow-sm p-3 mb-5 bg-body rounded" src="<?php echo $url ?>" style="height:150px";>
+  <div class="col"><img class="img-fluid featured rounded rounded-1" src="<?php echo $url ?>" style="height:150px";>
 </div>
     <div class="col-6">
     <p class="card-title fw-bold"><?php echo get_the_title();?></p>
-	<p class="card-text text-muted">Article by: <?php echo get_the_author();?></i>, Posted: <i><?php echo get_the_date();?></i><?php if($read_time):?> | Read time: <?php echo $read_time ?><?php endif ?></p>
+	<p class="card-text text-muted">Article by: <?php echo get_the_author();?></i>,   Posted: <i><?php echo get_the_date();?></i><?php if($read_time):?> | Read time: <?php echo $read_time ?><?php endif ?></p>
 	<a href="<?php the_permalink() ?>" class="btn btn-sm btn-dark text-white m-0">Read More</a></div>
 
   </div>
@@ -116,9 +116,9 @@
                                                 "post_status"         => "publish",
                                                 "orderby"             => "date",
                                                 "posts_per_page"      => 3,
-		              							"offset"              =>1,
-		              							'tag__not_in' => array( 62),
-                                                'category__in' => array( 3 )
+												"posts_per_page"      => 1,
+												'tag__not_in' => array( 62),
+												'category__in' => array( 3 )
                                           );                                           
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
@@ -158,8 +158,7 @@
 			</div>
 		</div>
 	</div>
-</div>
 </div><hr class="d-sm-block d-md-none">
 <div class="d-flex justify-content-center">
-<a href="https://techhobbyist.co.uk/category/projects/" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More projects</a>
+<a href="https://techhobbyist.co.uk/category/reviews/" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More reviews</a>
 </div>
