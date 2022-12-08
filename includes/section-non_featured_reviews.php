@@ -25,8 +25,8 @@
                                           if ($block1->have_posts()) :
                                           while ($block1->have_posts()) : $block1->the_post();?>
 
-<?php var_dump($condition->["ID"]);?>
 
+<?php var_dump($block1->["ID"]);?>
 
 <div class="card rounded rounded-0 border border-0 shadow-sm p-3 mb-2 bg-body rounded" style="height:565px;"><!-- non-fetured block-->
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
