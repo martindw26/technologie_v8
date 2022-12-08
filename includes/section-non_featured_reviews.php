@@ -19,7 +19,7 @@
                                                 "post_status"         => "publish",
                                                 "orderby"             => "date",
                                                 "posts_per_page"      => 1,
-												'paged' 			=> get_query_var('paged'),
+												"offset"	         => 1,
 		              							'tag__not_in' => array( 62 ),
                                                 'category__in' => array( 2 )
                                           );                                           
