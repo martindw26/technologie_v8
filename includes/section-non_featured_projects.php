@@ -118,7 +118,7 @@
                                                 "posts_per_page"      => 3,
 												"posts_per_page"      => 1,
 												'tag__not_in' => array( 62),
-												'category__in' => array( 3 )
+												'category__in' => array( 2 )
                                           );                                           
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
