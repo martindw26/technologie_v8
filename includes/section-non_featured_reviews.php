@@ -17,7 +17,7 @@
                                           $condition = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
-                                                "orderby"             => "date",
+                                                "orderby"             => "rand",
                                                 "posts_per_page"      => 1,
 												'tag_id' 			=> 62,
                                                 'category__in' => array( 2 )
