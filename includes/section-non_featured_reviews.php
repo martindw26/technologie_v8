@@ -19,7 +19,6 @@
                                                 "post_status"         => "publish",
                                                 "orderby"             => "date",
                                                 "posts_per_page"      => 1,
-												"offset"	         =>  1,
 												'tag_id' 			=> 62,
                                                 'category__in' => array( 2 )
                                           );                                           
