@@ -17,9 +17,9 @@
                                           $condition = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
-                                                "orderby"             => "date",
+                                                "orderby"             => "rand",
                                                 "posts_per_page"      => 1,
-		              							'tag__not_in' => array( 62 ),
+												'tag_id' 			=> 62,
                                                 'category__in' => array( 3 )
                                           );                                           
                                           $block1 = new WP_Query ($condition);
@@ -72,7 +72,6 @@
                                                 "post_status"        => "publish",
                                                 "orderby"            => "date",
                                                 "posts_per_page"     => 3,
-		             							"offset"	         => 0,
 		              							'tag__not_in' => array( 62),
                                                 'category__in' => array( 3 )
                                           );                                           
@@ -116,9 +115,9 @@
                                                 "post_status"         => "publish",
                                                 "orderby"             => "date",
                                                 "posts_per_page"      => 3,
-												"posts_per_page"      => 1,
-												'tag__not_in' => array( 62),
-												'category__in' => array( 3 )
+		              							"offset"              => 1,
+		              							'tag__not_in' => array( 62),
+                                                'category__in' => array( 3 )
                                           );                                           
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
