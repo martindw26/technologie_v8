@@ -15,14 +15,11 @@
 		endif; ?>
 		<?php // Right small block posts projects loop begins here
                                           $condition = array(
-                                                "post_type"           => "post",
-                                                "post_status"         => "publish",
-                                                "orderby"             => "date",
-                                                "posts_per_page"      => 1,
-												"offset"	         =>  1,
-												'no_found_rows' 	=> true,
-		              							'tag__not_in' => array( 62 ),
-                                                'category__in' => array( 2 )
+											'category_name' => 'reviews',
+											'posts_per_page' => 1,
+											'offset'		=> 1,
+											'post_status' => 'publish',
+											'ignore_sticky_posts' => true
                                           );                                           
                                           $block1 = new WP_Query ($condition);
                                           if ($block1->have_posts()) :
