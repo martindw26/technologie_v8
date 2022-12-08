@@ -35,8 +35,11 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
-<?php the_field( 'mpu_bottom_slot_head_script','option' ); ?>
-      
+<!-- Ad head scripts-->
+<?php get_template_part('includes/section','adshead');?>
+<!-- END MPU Bottom ad head script -->
+
+
 </head>
 
 
