@@ -20,6 +20,7 @@
                                                 "orderby"             => "date",
                                                 "posts_per_page"      => 1,
 												"offset"	         =>  1,
+												'no_found_rows' 	=> true,
 		              							'tag__not_in' => array( 62 ),
                                                 'category__in' => array( 2 )
                                           );                                           
