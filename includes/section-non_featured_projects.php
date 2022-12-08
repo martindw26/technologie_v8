@@ -1,5 +1,5 @@
 <div class="container">
-	<h2 class=" post_block_title text-dark">Latest <i>Reviews</i></h2>
+	<h2 class=" post_block_title text-dark">Latest <i>Projects</i></h2>
 </div>
 <div class="container pt-lg-4 pb-lg-4">
 	<div class="row">
@@ -20,7 +20,7 @@
                                                 "orderby"             => "date",
                                                 "posts_per_page"      => 1,
 		              							'tag__not_in' => array( 62 ),
-                                                'category__in' => array( 2 )
+                                                'category__in' => array( 3 )
                                           );                                           
                                           $block1 = new WP_Query ($condition);
                                           if ($block1->have_posts()) :
@@ -74,7 +74,7 @@
                                                 "posts_per_page"     => 3,
 		             							"offset"	         => 0,
 		              							'tag__not_in' => array( 62),
-                                                'category__in' => array( 2 )
+                                                'category__in' => array( 3 )
                                           );                                           
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
@@ -118,7 +118,7 @@
                                                 "posts_per_page"      => 3,
 												"posts_per_page"      => 1,
 												'tag__not_in' => array( 62),
-												'category__in' => array( 2 )
+												'category__in' => array( 3 )
                                           );                                           
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
