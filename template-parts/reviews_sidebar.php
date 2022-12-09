@@ -56,8 +56,7 @@ while ($block1->have_posts()) : $block1->the_post();?>
 		</div><br>
     <a href="<?php the_permalink() ?>" class="btn btn-dark text-white">Read More</a>
   </div>
-</div>
-<br>
+  <br>
 <div class="Commercial">
 	<div class="MPU_top">
 				<!-- Top MPU ad adslot-->
@@ -65,7 +64,7 @@ while ($block1->have_posts()) : $block1->the_post();?>
                  <!-- End Top MPU ad adslot-->
 	</div>
 </div>
-
+</div>
 </div><br>
 <?php endwhile;  else :  endif; wp_reset_postdata();?>
 
