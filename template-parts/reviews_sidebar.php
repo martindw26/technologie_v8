@@ -1,6 +1,12 @@
 <div class="">
 
-
+<div class="Commercial">
+	<div class="MPU">
+				<!-- MPU ad adslot-->
+	       		<?php get_template_part('includes/section','mpu_ad');?>
+                 <!-- End MPU ad adslot-->
+	</div>
+</div>
 
 <h3 class="post_block_title text-dark d-flex justify-content-center">You may also like these
 <?php 
