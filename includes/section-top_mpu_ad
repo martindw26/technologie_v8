@@ -4,8 +4,8 @@
 <p class="d-flex justify-content-center pt-2 text-light">Advertisment</p>
 <?php 
 
-$MPU_Bottom  = get_field( 'mpu_top_slot_body_script','option' );
-echo $MPU_Bottom;
+$MPU_top  = get_field( 'mpu_top_slot_body_script','option' );
+echo $MPU_top;
 
 ?>
 </center></div> 
