@@ -96,7 +96,7 @@
   </div>
 </div>
 </div>
-		<?php endwhile;  else :  endif; wp_reset_postdata();?>
+		<?php endwhile;  else :  endif; wp_reset_postdata(); wp_reset_query();?>
 				</div>
 
 <div class="non_featured_block_home_page_mobile">
@@ -150,7 +150,7 @@
   </div>
 </div>
 </div>
-		<?php endwhile;  else :  endif; wp_reset_postdata();?>
+		<?php endwhile;  else :  endif; wp_reset_postdata(); wp_reset_query();?>
 				
 				</div>
 				</div>
