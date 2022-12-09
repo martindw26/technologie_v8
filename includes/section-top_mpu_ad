@@ -8,7 +8,5 @@ $MPU_Bottom  = get_field( 'mpu_top_slot_body_script','option' );
 echo $MPU_Bottom;
 
 ?>
-</center>
-</div> 
-</div>
-</div>
+</center></div> 
+</div></div>   
