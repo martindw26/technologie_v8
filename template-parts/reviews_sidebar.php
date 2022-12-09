@@ -1,4 +1,4 @@
-<div class="">
+<div class="sticky-top">
 
 <h3 class="post_block_title text-dark d-flex justify-content-center">You may also like these
 <?php 
