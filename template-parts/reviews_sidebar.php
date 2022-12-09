@@ -57,12 +57,12 @@ while ($block1->have_posts()) : $block1->the_post();?>
     <a href="<?php the_permalink() ?>" class="btn btn-dark text-white">Read More</a>
   </div>
 </div>
-
+<br>
 <div class="Commercial">
 	<div class="MPU">
-				<!-- MPU ad adslot-->
+				<!-- Top MPU ad adslot-->
 	       		<?php get_template_part('includes/section','mpu_ad');?>
-                 <!-- End MPU ad adslot-->
+                 <!-- End Top MPU ad adslot-->
 	</div>
 </div>
 
