@@ -60,7 +60,7 @@ while ($block1->have_posts()) : $block1->the_post();?>
 <?php endwhile;  else :  endif; wp_reset_postdata();?>
 
 
-<div class="fixed-top">
+<div class="sticky">
 <div class="Commercial">
 	<div class="MPU_bottom">
 				<!-- MPU ad adslot-->
