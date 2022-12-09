@@ -5,7 +5,7 @@
 <?php 
 
 $Header_Middle_Slot  = get_field( 'header_ad_middle_slot_body_script','option' );
-echo $Middle_Top_Slot;
+echo $Header_Middle_Slot;
 
 ?>
 
@@ -20,7 +20,7 @@ echo $Middle_Top_Slot;
 <?php 
 
 $Middle_Top_Slot  = get_field( 'header_ad_middle_slot_body_script','option' );
-echo $Middle_Top_Slot;
+echo $Header_Middle_Slot;
 
 ?>
 
