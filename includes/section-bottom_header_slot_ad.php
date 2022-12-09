@@ -5,7 +5,7 @@
 <?php 
 
 $Header_Bottom_Slot  = get_field( 'header_ad_bottom_slot_body_script','option' );
-echo $Bottom_Top_Slot;
+echo $Header_Bottom_Slot;
 
 ?>
 
@@ -20,7 +20,7 @@ echo $Bottom_Top_Slot;
 <?php 
 
 $Header_Bottom_Slot  = get_field( 'header_ad_bottom_slot_body_script','option' );
-echo $Bottom_Top_Slot;
+echo $Header_Bottom_Slot;
 
 ?>
 
