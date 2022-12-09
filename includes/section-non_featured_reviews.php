@@ -19,7 +19,7 @@
                                                 "post_status"         => "publish",
                                                 "orderby"             => "rand",
                                                 "posts_per_page"      => 1,
-												'tag_id' 			=> 62,
+												'tag__not_in' => array( 62),
                                                 'category__in' => array( 2 )
                                           );                                           
                                           $block1 = new WP_Query ($condition);
@@ -56,7 +56,7 @@
 </div>
 </div>
 
-<?php endwhile;  else :  endif; wp_reset_postdata();?>
+<?php endwhile;  else :  endif; wp_reset_postdata(); wp_reset_query();?>
 
 <div class="col-lg-6">
 
