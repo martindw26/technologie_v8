@@ -19,7 +19,7 @@ echo $Header_Middle_Slot;
 <p class="d-flex justify-content-center pt-2 text-dark">Advertisment</p>
 <?php 
 
-$Header_Middle_Slot; = get_field( 'header_ad_middle_slot_body_script','option' );
+$Header_Middle_Slot = get_field( 'header_ad_middle_slot_body_script','option' );
 echo $Header_Middle_Slot;
 
 ?>
