@@ -1,5 +1,11 @@
 <div class="">
-
+<br>
+<div class="Commercial">
+	<div class="MPU">
+				<!-- Top MPU ad adslot-->
+	       		<?php get_template_part('includes/section','top_mpu_ad');?>
+                 <!-- End Top MPU ad adslot-->
+	</div>
 <h3 class="post_block_title text-dark d-flex justify-content-center">You may also like these
 <?php 
 	foreach((get_the_category()) as $category){
@@ -57,13 +63,6 @@ while ($block1->have_posts()) : $block1->the_post();?>
     <a href="<?php the_permalink() ?>" class="btn btn-dark text-white">Read More</a>
   </div>
 </div>
-<br>
-<div class="Commercial">
-	<div class="MPU">
-				<!-- Top MPU ad adslot-->
-	       		<?php get_template_part('includes/section','top_mpu_ad');?>
-                 <!-- End Top MPU ad adslot-->
-	</div>
 </div>
 
 </div><br>
