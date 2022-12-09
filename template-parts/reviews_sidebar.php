@@ -1,13 +1,5 @@
 <div class="">
 
-<div class="Commercial">
-	<div class="MPU">
-				<!-- MPU ad adslot-->
-	       		<?php get_template_part('includes/section','mpu_ad');?>
-                 <!-- End MPU ad adslot-->
-	</div>
-</div>
-
 <h3 class="post_block_title text-dark d-flex justify-content-center">You may also like these
 <?php 
 	foreach((get_the_category()) as $category){
@@ -65,6 +57,15 @@ while ($block1->have_posts()) : $block1->the_post();?>
     <a href="<?php the_permalink() ?>" class="btn btn-dark text-white">Read More</a>
   </div>
 </div>
+
+<div class="Commercial">
+	<div class="MPU">
+				<!-- MPU ad adslot-->
+	       		<?php get_template_part('includes/section','mpu_ad');?>
+                 <!-- End MPU ad adslot-->
+	</div>
+</div>
+
 </div><br>
 <?php endwhile;  else :  endif; wp_reset_postdata();?>
 
