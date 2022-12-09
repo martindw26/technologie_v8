@@ -63,3 +63,13 @@ while ($block1->have_posts()) : $block1->the_post();?>
 </div>
 </div>
 <br>    
+
+<div class="sticky-top">
+<div class="Commercial">
+	<div class="MPU_bottom">
+				<!-- MPU ad adslot-->
+	       		<?php get_template_part('includes/section','bottom_mpu_ad');?>
+                 <!-- End MPU ad adslot-->
+	</div>
+</div>
+</div>
