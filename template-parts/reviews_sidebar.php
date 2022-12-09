@@ -61,7 +61,7 @@ while ($block1->have_posts()) : $block1->the_post();?>
 
 
 
-<div class="Commercial sticky-top">
+<div class="Commercial">
 	<div class="MPU_bottom">
 				<!-- MPU ad adslot-->
 	       		<?php get_template_part('includes/section','bottom_mpu_ad');?>
