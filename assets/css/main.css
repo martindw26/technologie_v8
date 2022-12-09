@@ -103,8 +103,8 @@ background-color:
       }
 
 .MPU_bottom{
-    position: -webkit-sticky;
-    position: sticky;
+    position: -webkit-sticky!important;
+    position: sticky!important;
     top: 0;
     z-index: 1020;
     }
