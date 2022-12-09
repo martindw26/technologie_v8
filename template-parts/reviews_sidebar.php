@@ -48,33 +48,26 @@ while ($block1->have_posts()) : $block1->the_post();?>
 				?>
 				<!-- End catarrayrated -->
 				</p>
-<p class="mb-3">&#34;<?php echo excerpt(25);?>&#34;
+				<p class="mb-3">&#34;<?php echo excerpt(25);?>&#34;
 				</p>
-
 		<div class="card-text text-muted small">
 		Article by: <i><?php echo get_the_author();?></i>,  Posted: <i><?php echo get_the_date();?></i><?php if($read_time):?> | <?php echo $read_time ?><?php endif ?></i>
 		</div><br>
     <a href="<?php the_permalink() ?>" class="btn btn-dark text-white">Read More</a>
   </div>
-  <br>
-<div class="Commercial">
-	<div class="MPU_top">
-				<!-- Top MPU ad adslot-->
-	       		<?php get_template_part('includes/section','top_mpu_ad');?>
-                 <!-- End Top MPU ad adslot-->
-	</div>
-</div>
 </div>
 </div><br>
 <?php endwhile;  else :  endif; wp_reset_postdata();?>
 
 
+<div class="sticky-top">
 <div class="Commercial">
 	<div class="MPU_bottom">
 				<!-- MPU ad adslot-->
 	       		<?php get_template_part('includes/section','bottom_mpu_ad');?>
                  <!-- End MPU ad adslot-->
 	</div>
+</div>
 </div>
 
 </div>
