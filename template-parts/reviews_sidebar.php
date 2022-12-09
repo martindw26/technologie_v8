@@ -61,7 +61,7 @@ while ($block1->have_posts()) : $block1->the_post();?>
 <div class="Commercial">
 	<div class="MPU">
 				<!-- Top MPU ad adslot-->
-	       		<?php get_template_part('includes/section','mpu_ad');?>
+	       		<?php get_template_part('includes/section','top_mpu_ad');?>
                  <!-- End Top MPU ad adslot-->
 	</div>
 </div>
@@ -73,7 +73,7 @@ while ($block1->have_posts()) : $block1->the_post();?>
 <div class="Commercial">
 	<div class="MPU">
 				<!-- MPU ad adslot-->
-	       		<?php get_template_part('includes/section','mpu_ad');?>
+	       		<?php get_template_part('includes/section','bottom_mpu_ad');?>
                  <!-- End MPU ad adslot-->
 	</div>
 </div>
