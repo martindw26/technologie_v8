@@ -1,9 +1,11 @@
 <div class="commerce_hp_desktop">
 <div class="commerce_ldr rounded rounded-1 mb-4" style="height:280px; width:980px; margin: 0 auto; background-color: #dee2e6;">
 <div><center>
+
 <p class="d-flex justify-content-center pt-2 text-dark">Advertisment</p>
+
 <?php 
-echo '<div class="d-inline-flex p-2">';
+echo '<div class="ad">';
 $Header_Middle_Slot = get_field( 'header_ad_middle_slot_body_script','option' );
 echo $Header_Middle_Slot;
 echo '</div>';
@@ -18,7 +20,7 @@ echo '</div>';
 <div><center>
 <p class="d-flex justify-content-center pt-2 text-dark">Advertisment</p>
 <?php 
-echo '<div class="">';
+echo '<div class="ad">';
 $Header_Middle_Slot = get_field( 'header_ad_middle_slot_body_script','option' );
 echo $Header_Middle_Slot;
 echo '</div>';
