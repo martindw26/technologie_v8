@@ -3,10 +3,10 @@
 <div><center>
 <p class="d-flex justify-content-center pt-2 text-dark">Advertisment</p>
 <?php 
-
-$Header_Middle_Slot  = get_field( 'header_ad_middle_slot_body_script','option' );
+echo '<div class="d-inline-flex p-2">';
+$Header_Middle_Slot = get_field( 'header_ad_middle_slot_body_script','option' );
 echo $Header_Middle_Slot;
-
+echo '</div>';
 ?>
 
 </center></div> 
@@ -18,10 +18,10 @@ echo $Header_Middle_Slot;
 <div><center>
 <p class="d-flex justify-content-center pt-2 text-dark">Advertisment</p>
 <?php 
-
+echo '<div class="">';
 $Header_Middle_Slot = get_field( 'header_ad_middle_slot_body_script','option' );
 echo $Header_Middle_Slot;
-
+echo '</div>';
 ?>
 
 </center></div> 
