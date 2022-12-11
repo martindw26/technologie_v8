@@ -270,7 +270,6 @@ $PartsProductParagraph = get_sub_field('parts_paragraph');
 
 <?php if ($PartsProductTitle): ?>
 <hr><h4 class="m-4">Here are the parts required for the this <?php echo $PartsProductTitle; ?><i> project</i></h4>
-<p><?php echo $PartsProductParagraph;?></p>
 <?php endif; ?>	 
 <table class="table table-light table-hover table-bordered table-striped p-2">
 <tr>
