@@ -292,6 +292,7 @@ $PartsProductParagraph = get_sub_field('parts_paragraph');
 </div><hr>
 <?php endif; ?>
 </div>
+</div>
 
 <!-- Pros and cons column horizontal block -->
 <?php if (get_row_layout() == 'pros_cons_column'):
