@@ -52,6 +52,10 @@ background-color:
 
 /*Ads*/
 
+.ad{
+   margin: 0 auto!important;
+}
+
 
 @media (min-width: 768px) {
     .commerce_hp_mobile{
