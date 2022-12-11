@@ -3,7 +3,7 @@
 <div>
 <p class="d-flex justify-content-center pt-2 text-dark">Advertisment</p>
 <?php 
-echo '<div class="ad">';
+echo '<div class="rounded mx-auto d-block">';
 $Header_Middle_Slot = get_field( 'header_ad_middle_slot_body_script','option' );
 echo $Header_Middle_Slot;
 echo '</div>';
@@ -17,7 +17,7 @@ echo '</div>';
 <div><center>
 <p class="d-flex justify-content-center pt-2 text-dark">Advertisment</p>
 <?php 
-echo '<div class="ad">';
+echo '<div class="rounded mx-auto d-block">';
 $Header_Middle_Slot = get_field( 'header_ad_middle_slot_body_script','option' );
 echo $Header_Middle_Slot;
 echo '</div>';
