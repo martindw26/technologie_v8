@@ -261,13 +261,13 @@ $jigID = get_sub_field('justified_image_grid_id');
 <?php endif; ?>
 
 <!-- Parts column horizontal block -->
-<div class="container mt-2 ">
+
 <?php if (get_row_layout() == 'parts_column_section'):
 $partscolumns = get_sub_field('parts_column');
 $PartsProductTitle = get_sub_field('part_title');
 $PartsProductParagraph = get_sub_field('parts_paragraph');
 ?>	
-<div class="row">
+
 <?php if ($PartsProductTitle): ?>
 <hr><h4 class="m-4">Here are the parts required for the this <?php echo $PartsProductTitle; ?><i> project</i></h4>
 <?php endif; ?>	 
@@ -289,9 +289,9 @@ $PartsProductParagraph = get_sub_field('parts_paragraph');
 </tr>
 <?php endforeach; ?>		
 </table>
-</div><hr>
+<hr>
 <?php endif; ?>
-</div>
+
 
 
 <!-- Pros and cons column horizontal block -->
