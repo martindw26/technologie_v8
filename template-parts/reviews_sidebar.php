@@ -7,6 +7,14 @@
 		}
 	?>
 </h3><hr>
+
+<div class="Commercial">
+	<div class="Top_bottom">
+				<!-- MPU top ad adslot-->
+				<?php get_template_part( 'template-parts/ads_body/top_mpu_ad' );?>
+                 <!-- End MPU top ad adslot-->
+	</div>
+</div>
 <div class="">
 <?php if (have_posts()) : while (have_posts()) : the_post();
 the_content();
@@ -27,13 +35,6 @@ if ($block1->have_posts()) :
 while ($block1->have_posts()) : $block1->the_post();?>
 <!-- Blog post-->
 
-<div class="Commercial">
-	<div class="Top_bottom">
-				<!-- MPU top ad adslot-->
-				<?php get_template_part( 'template-parts/ads_body/top_mpu_ad' );?>
-                 <!-- End MPU top ad adslot-->
-	</div>
-</div>
 <div class="col">
  <div class="card rounded rounded-0 border border-1">
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
