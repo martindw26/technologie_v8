@@ -8,13 +8,7 @@
 	?>
 </h3><hr>
 
-<div class="Commercial">
-	<div class="Top_bottom">
-				<!-- MPU top ad adslot-->
-				<?php get_template_part( 'template-parts/ads_body/top_mpu_ad' );?>
-                 <!-- End MPU top ad adslot-->
-	</div>
-</div>
+<?php get_template_part( 'template-parts/ads_body/bottom/section/top_mpu_placement' );?>
 <div class="">
 <?php if (have_posts()) : while (have_posts()) : the_post();
 the_content();
