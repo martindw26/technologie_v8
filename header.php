@@ -36,7 +36,7 @@ for (i = 0; i < coll.length; i++) {
 </script>
 
 <!-- Ad head scripts-->
-<?php locate_template('theme/components','adshead');?>
+<?php get_template_part('partials','adshead');?>
 <!-- END MPU Bottom ad head script -->
 
 
