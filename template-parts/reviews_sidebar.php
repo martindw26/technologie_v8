@@ -8,7 +8,7 @@
 	?>
 </h3><hr>
 
-<?php get_template_part( 'template-parts/ads_body/bottom/section/top_mpu_placement' );?>
+<?php get_template_part( 'template-parts/ads_body/top/section/top_mpu_placement' );?>
 <div class="">
 <?php if (have_posts()) : while (have_posts()) : the_post();
 the_content();
