@@ -1,5 +1,6 @@
 <div class="">
 <h3 class="post_block_title text-dark d-flex justify-content-center">You may also like these deals</h3><hr>
+<?php get_template_part( 'template-parts/ads_body/top/section/top_mpu_placement' );?>
 <div class="">
 <?php if (have_posts()) : while (have_posts()) : the_post();
 the_content();
@@ -64,12 +65,4 @@ while ($block1->have_posts()) : $block1->the_post();?>
 </div>
 <br>    
 
-<div class="sticky-top">
-<div class="Commercial">
-	<div class="MPU_bottom">
-				<!-- MPU ad adslot-->
-	       		<?php get_template_part('includes/section','bottom_mpu_ad');?>
-                 <!-- End MPU ad adslot-->
-	</div>
-</div>
-</div>
+<?php get_template_part( 'template-parts/ads_body/bottom/section/bottom_mpu_placement' );?>
