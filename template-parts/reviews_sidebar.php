@@ -60,9 +60,9 @@ while ($block1->have_posts()) : $block1->the_post();?>
 <?php endwhile;  else :  endif; wp_reset_postdata();?>
 <div class="Commercial">
 	<div class="Top_bottom">
-				<!-- MPU ad adslot-->
-	       		<?php get_template_part('template-parts/ads_body','top_mpu_ad');?>
-                 <!-- End MPU ad adslot-->
+				<!-- MPU top ad adslot-->
+				<?php get_template_part( 'template-parts/ads_body/top_mpu_ad' );?>
+                 <!-- End MPU top ad adslot-->
 	</div>
 </div>
 </div>
