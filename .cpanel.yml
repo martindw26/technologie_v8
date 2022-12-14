@@ -3,4 +3,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/martindw/public_html/wp-content/themes/techhobbyist_version_8
-   - /bin/cp -fr * $DEPLOYPATH
+    - /bin/cp -R * $DEPLOYPATH
