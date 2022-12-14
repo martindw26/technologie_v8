@@ -1,4 +1,4 @@
-##auto deploy yml file v1##
+##auto deploy yml file v1.1##
 
 deployment:
   tasks:
@@ -9,4 +9,6 @@ deployment:
     - /bin/cp -R fonts $DEPLOYPATH
     - /bin/cp -R img $DEPLOYPATH
     - /bin/cp -R js $DEPLOYPATH
-    /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -R includes $DEPLOYPATH
+    - /bin/cp -R template-parts $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
