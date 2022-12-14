@@ -21,9 +21,9 @@
                                                 while ($block1->have_posts()) : $block1->the_post();?>
 		        <div class="col-lg">
 		       <!-- Blog post-->
-		       <div class="box h-100 d-100 d-flex flex-column text-white">
+		       <div class="box h-100 d-100 d-flex flex-column text-white shadow-sm p-3 mb-5 bg-body rounded">
  
-	<div class="card bg-white rounded rounded-0 text-dark">
+	<div class="card bg-white rounded rounded-0 text-dark border border-0">
 	<?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
 	  <img src="<?php echo $url ?>" class="card-img-top featured" alt="...">
 	  <div class="card-body">

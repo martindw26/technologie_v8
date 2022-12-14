@@ -1,7 +1,5 @@
 <div class="">
 
-
-
 <h3 class="post_block_title text-dark d-flex justify-content-center">You may also like these
 <?php 
 	foreach((get_the_category()) as $category){
@@ -9,6 +7,8 @@
 		}
 	?>
 </h3><hr>
+
+<?php get_template_part( 'template-parts/ads_body/top/section/top_mpu_placement' );?>
 <div class="">
 <?php if (have_posts()) : while (have_posts()) : the_post();
 the_content();
@@ -28,7 +28,6 @@ $condition = array(
 if ($block1->have_posts()) :
 while ($block1->have_posts()) : $block1->the_post();?>
 <!-- Blog post-->
-
 
 <div class="col">
  <div class="card rounded rounded-0 border border-1">
@@ -50,9 +49,8 @@ while ($block1->have_posts()) : $block1->the_post();?>
 				?>
 				<!-- End catarrayrated -->
 				</p>
-<p class="mb-3">&#34;<?php echo excerpt(25);?>&#34;
+				<p class="mb-3">&#34;<?php echo excerpt(25);?>&#34;
 				</p>
-
 		<div class="card-text text-muted small">
 		Article by: <i><?php echo get_the_author();?></i>,  Posted: <i><?php echo get_the_date();?></i><?php if($read_time):?> | <?php echo $read_time ?><?php endif ?></i>
 		</div><br>
@@ -62,6 +60,7 @@ while ($block1->have_posts()) : $block1->the_post();?>
 </div><br>
 <?php endwhile;  else :  endif; wp_reset_postdata();?>
 
+</div>
+</div>
 
-</div>
-</div>
+<?php get_template_part( 'template-parts/ads_body/bottom/section/bottom_mpu_placement' );?>

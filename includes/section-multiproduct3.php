@@ -110,14 +110,14 @@ if($currency == 'GBP') {
 <br>
 
 <!-- Social share icons-->
-             <?php $enable_in_article = get_field('on_article','option');?>
-             <?php if($enable_in_article):?>
-             <?php get_template_part('includes/section','social_sharefrontpagearticle');?>
-             <?php else:?>
-             <?php echo '<style>{ display:none;}</style>';?>
-             <?php endif;?>
-              <hr>
-             <!-- End Social share icons-->
+<?php $enable_in_article = get_field('on_article','option');?>
+<?php if($enable_in_article):?>
+<?php get_template_part('includes/section','social_sharefrontpagearticle');?>
+<?php else:?>
+<?php echo '<style>{ display:none;}</style>';?>
+<?php endif;?>
+<hr>
+<!-- End Social share icons-->
 
 </section>
 <?php endwhile; ?>

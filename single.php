@@ -33,8 +33,12 @@
              <!-- End header image block-->
 
              <!-- Article content blocks -->
-             <?php get_template_part('includes/section','articlepostcontentblocks');?>
+             <?php get_template_part('includes/section','reviewprojectpostcontentblocks');?>
              <!-- End Article content blocks-->
+
+            <!-- Article content disclaimer block -->
+            <?php get_template_part('includes/section','disclaimer');?>
+            <!-- End content disclaimer block-->
 
               <!-- meta block-->
              <?php get_template_part('includes/section','meta');?>

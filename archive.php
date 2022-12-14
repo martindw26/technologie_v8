@@ -11,9 +11,9 @@
 
           <?php if (have_posts()) : ?>
 
-            <h2 class="p-2 text-dark"><?php
+            <h2 class="display-2 font-weight-bold text-dark p-2"><?php
 		if ( is_category() ) {
-			single_cat_title('Latest ');
+			single_cat_title(' ');
 		} elseif ( is_tag() ) {
 			single_cat_title('Latest tags: ');
 		} elseif ( is_author() ) {
@@ -45,14 +45,14 @@
 
 
 
-<div class="container mt-3 border-border border-0">
+<div class="container mt-3 border-border border-0 shadow-sm p-3 mb-5 bg-body rounded">
 
 <div class="row"><!-- block left-->
     <div class="col-md-6 col-sm bg-white text-dark">
     <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
       <img class="img-fluid p-1 rounded-1" src="<?php echo $url ?>"/>
     </div><!-- End block right-->
-    <div class="col-md-6 col-sm bg-white text-dark"><!-- block right-->
+    <div class="col-md-6 col-sm bg-white text-dark p-2"><!-- block right-->
  <h5 class="card-title"><?php echo get_the_title();?></h5>
 
 

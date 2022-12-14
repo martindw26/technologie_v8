@@ -1,6 +1,6 @@
 <?php
   get_header();
- /* Template Name: Feeds Post*/
+ /* Template Name: Article Post*/
  /* Template Post Type: post */
 ?>  
 
@@ -11,12 +11,7 @@
           <div class="col-lg-8 p-lg-2 bg-white text-dark">
 
 
-            <h1 class=" display-2 font-weight-bold text-dark" style=""><?php $feed = the_field('page_title');?></h1>
-
-          <div class=" bg-secondary text-light p-4 mb-4 border-dark lead">
-          <div><?php the_field('description');?></div> 
-          </div>
-
+            <h1 class=" display-2 font-weight-bold text-dark" style=""><?php echo esc_html( get_the_title() );?></h1>
 
 				<!-- Social share icons-->
 				<?php $enable_in_article = get_field('on_article','option');?>
@@ -27,12 +22,6 @@
 				<?php endif;?>
 				<!-- End Social share icons-->
 
-             <!-- header image block-->
-                                                
-             <?php get_template_part('includes/section','feeds');?>
-                                                
-             <!-- End header image block-->
-
 
              <!-- header image block-->
                                                 
@@ -41,8 +30,12 @@
              <!-- End header image block-->
 
              <!-- Article content blocks -->
-             <?php get_template_part('includes/section','');?>
+             <?php get_template_part('includes/section','article');?>
              <!-- End Article content blocks-->
+
+            <!-- Article content disclaimer block -->
+            <?php get_template_part('includes/section','disclaimer');?>
+            <!-- End content disclaimer block-->
 
               <!-- meta block-->
              <?php get_template_part('includes/section','meta');?>
