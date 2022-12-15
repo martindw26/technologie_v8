@@ -50,7 +50,7 @@
 </div>
 </div>
 
-<?php endwhile;  else :  endif; wp_reset_postdata(); wp_reset_query();?>
+<?php endwhile;  else :  endif; wp_reset_postdata(); ?>
 
 <div class="col-lg-6">
 
@@ -84,7 +84,7 @@
   </div>
 </div>
 </div>
-		<?php endwhile;  else :  endif; wp_reset_postdata(); wp_reset_query();?>
+		<?php endwhile;  else :  endif; wp_reset_postdata();?>
 				</div>
 
 <div class="non_featured_block_home_page_mobile">
