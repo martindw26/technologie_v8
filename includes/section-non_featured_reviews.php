@@ -69,7 +69,7 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Left block posts projects loop begins here
-                                          $condition = array(
+                                          $condition2 = array(
                                                 "post_type"          => "post",
                                                 "post_status"        => "publish",
                                                 "orderby"            => "date",
@@ -77,7 +77,7 @@
 												'ignore_sticky_posts' => 1,
                                                 'category__in' => array( 2 )
                                           );                                           
-                                          $block2 = new WP_Query ($condition);
+                                          $block2 = new WP_Query ($condition2);
                                           if ($block2->have_posts()) :
                                           while ($block2->have_posts()) : $block2->the_post();?>
 
@@ -112,7 +112,7 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Left block posts projects loop begins here
-                                          $condition2 = array(
+                                          $condition3 = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
                                                 "orderby"             => "date",
@@ -121,9 +121,9 @@
 		              							'tag__not_in' => array( 62),
                                                 'category__in' => array( 2 )
                                           );                                           
-                                          $block2 = new WP_Query ($condition2);
-                                          if ($block2->have_posts()) :
-                                          while ($block2->have_posts()) : $block2->the_post();?>
+                                          $block3 = new WP_Query ($condition3);
+                                          if ($block3->have_posts()) :
+                                          while ($block3->have_posts()) : $block3->the_post();?>
 
 <div class="card rounded rounded-0 border border-0">
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
