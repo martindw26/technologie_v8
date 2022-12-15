@@ -22,7 +22,6 @@
 												'post__in'            => $stickies,
 												'ignore_sticky_posts' => 1,
                                                 "posts_per_page"      => 1,
-												'tag__not_in' => array( 62),
                                                 'category__in' => array( 2 )
                                           );                                           
                                           $block1 = new WP_Query ($condition);
