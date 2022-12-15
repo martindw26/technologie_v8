@@ -13,18 +13,10 @@
 		else :
 		echo '<p>No content found</p>';
 		endif; ?>
-		<?php // Right small block posts projects loop begins here
-                                          $condition = array(
-                                                "post_type"           => "post",
-                                                "post_status"         => "publish",
-                                                "orderby"             => "rand",
-                                                "posts_per_page"      => 1,
-												'tag__not_in' => array( 62),
-                                                'category__in' => array( 2 )
-                                          );                                           
-                                          $block1 = new WP_Query ($condition);
-                                          if ($block1->have_posts()) :
-                                          while ($block1->have_posts()) : $block1->the_post();?>
+<?php // opinion posts loop begins here
+$block1 = new WP_Query('cat=2&posts_per_page=1');
+if ($block1->have_posts()) :
+while block1->have_posts()) :  $block1->the_post(); ?>
 
 
 <div class="card rounded rounded-0 border border-0 shadow-sm p-3 mb-2 bg-body rounded" style="height:565px;"><!-- non-fetured block-->
