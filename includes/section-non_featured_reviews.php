@@ -13,8 +13,8 @@
 		else :
 		echo '<p>No content found</p>';
 		endif; ?>
-		<?php $stickies = get_option( 'sticky_posts' );?>
 		<?php // Right small block posts reviews featured loop begins here
+		$stickies = get_option( 'sticky_posts' )
                                           $condition = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
