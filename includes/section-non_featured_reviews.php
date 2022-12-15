@@ -116,9 +116,7 @@
 											"orderby"            => "date",
 											"posts_per_page"     => 3,
 											'tag__not_in' => array( 62),
-											'category__in' => array( 2 ),
-											'update_post_term_cache' => false, 
-											'update_post_meta_cache' => false, 
+											'category__in' => array( 2 ), 
 											'nopaging' => true
                                           );                                           
                                           $block2 = new WP_Query ($condition);
