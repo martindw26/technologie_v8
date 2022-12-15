@@ -1,5 +1,5 @@
 <div class="container">
-	<h2 class=" post_block_title text-dark">Latest <i>Reviews</i></h2>
+	<h2 class=" post_block_title text-dark"><?php the_sub_field( 'Block_1_title' );?></h2>
 </div>
 <div class="container pt-lg-4 pb-lg-4">
 	<div class="row">
