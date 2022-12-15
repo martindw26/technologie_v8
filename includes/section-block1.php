@@ -21,7 +21,7 @@
                                                 "orderby"             	=> "rand",
                                                 "posts_per_page"      	=> 1,
 												'tag__not_in' 			=> array( 62),
-                                                'cat' 					=> array( $Block1Category )
+                                                'category_name'			=> array( $Block1Category )
                                           );                                           
                                           $block1 = new WP_Query ($condition);
                                           if ($block1->have_posts()) :
@@ -75,7 +75,7 @@
                                                 "orderby"            	=> "date",
                                                 "posts_per_page"     	=> 3,
 		              							'tag__not_in' 			=> array( 62),
-												'cat' 					=> array( $Block1Category )
+												'category_name'			=> array( $Block1Category )
                                           );                                           
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
@@ -120,7 +120,7 @@
                                                 "posts_per_page"      	=> 3,
 		              							"offset"              	=> 1,
 		              							'tag__not_in' 			=> array( 62),
-												'cat' 					=> array( $Block1Category )
+												'category_name'			=> array( $Block1Category )
                                           );                                           
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
