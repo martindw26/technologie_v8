@@ -14,13 +14,13 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Right small block posts projects loop begins here
-											$condition = array(
+                                          $condition = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
                                                 "orderby"             => "rand",
                                                 "posts_per_page"      => 1,
-												'tag_id' 			=> 62,
-                                                'category__in' => array( 2 )
+												'tag_id' 			=> 2,
+                                                'category__in' => array( 62 )
                                           );                                           
                                           $block1 = new WP_Query ($condition);
                                           if ($block1->have_posts()) :
@@ -56,7 +56,7 @@
 </div>
 </div>
 
-<?php endwhile;  else :  endif; wp_reset_postdata(); wp_reset_query();?>
+<?php endwhile;  else :  endif; wp_reset_postdata();?>
 
 <div class="col-lg-6">
 
@@ -68,12 +68,12 @@
 		endif; ?>
 		<?php // Left block posts projects loop begins here
                                           $condition = array(
-											"post_type"          => "post",
-											"post_status"        => "publish",
-											"orderby"            => "date",
-											"posts_per_page"     => 3,
-											  'tag__not_in' => array( 62),
-											'category__in' => array( 2 )
+                                                "post_type"          => "post",
+                                                "post_status"        => "publish",
+                                                "orderby"            => "date",
+                                                "posts_per_page"     => 3,
+		              							'tag__not_in' => array( 62),
+                                                'category__in' => array( 2 )
                                           );                                           
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
@@ -96,7 +96,7 @@
   </div>
 </div>
 </div>
-		<?php endwhile;  else :  endif; wp_reset_postdata(); wp_reset_query();?>
+		<?php endwhile;  else :  endif; wp_reset_postdata();?>
 				</div>
 
 <div class="non_featured_block_home_page_mobile">
@@ -111,8 +111,13 @@
 		endif; ?>
 		<?php // Left block posts projects loop begins here
                                           $condition = array(
-											"posts_per_page"     => 3,
-											'category__in' => array( 2 )
+                                                "post_type"           => "post",
+                                                "post_status"         => "publish",
+                                                "orderby"             => "date",
+                                                "posts_per_page"      => 3,
+		              							"offset"              => 1,
+		              							'tag__not_in' => array( 62),
+                                                'category__in' => array( 2 )
                                           );                                           
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
@@ -145,7 +150,7 @@
   </div>
 </div>
 </div>
-		<?php endwhile;  else :  endif; wp_reset_postdata(); wp_reset_query();?>
+		<?php endwhile;  else :  endif; wp_reset_postdata();?>
 				
 				</div>
 				</div>
