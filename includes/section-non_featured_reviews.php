@@ -59,7 +59,7 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Left block posts projects loop begins here
-										  $block1 = new WP_Query('cat=2&posts_per_page=3');
+										  $block2 = new WP_Query('cat=2&posts_per_page=3');
                                           if ($block2->have_posts()) :
                                           while ($block2->have_posts()) : $block2->the_post();?>
 
