@@ -67,7 +67,7 @@
 		<?php // Left block posts projects loop begins here
                                           $condition2 = array(
                                                 "posts_per_page"     => 3,
-                                                'category__in' => array( 2 )
+                                                'cat' => 2 ,
                                           );                                           
                                           $block2 = new WP_Query ($condition2);
                                           if ($block2->have_posts()) :
