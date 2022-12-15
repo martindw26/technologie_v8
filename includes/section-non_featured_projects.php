@@ -1,19 +1,19 @@
-<div class="container">
-	<h2 class=" post_block_title text-dark">Latest <i>Projects</i></h2>
-</div>
+
 <div class="container pt-lg-4 pb-lg-4">
 	<div class="row">
 	<div class="col-lg-6">
 
 
-
+	<div class="container">
+	<h2 class=" post_block_title text-dark">Featured <i>Projects</i></h2>
+</div>
 <?php if (have_posts()) : while (have_posts()) : the_post();
 		the_content();
 		endwhile;
 		else :
 		echo '<p>No content found</p>';
 		endif; ?>
-		<?php // Right small block posts projects loop begins here
+		<?php // Right small block posts Reviews loop begins here
                                           $condition = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
@@ -59,14 +59,16 @@
 <?php endwhile;  else :  endif; wp_reset_postdata();?>
 
 <div class="col-lg-6">
-
+<div class="container">
+	<h2 class=" post_block_title text-dark">Latest <i>Projects</i></h2>
+</div>
 <?php if (have_posts()) : while (have_posts()) : the_post();
 		the_content();
 		endwhile;
 		else :
 		echo '<p>No content found</p>';
 		endif; ?>
-		<?php // Left block posts projects loop begins here
+		<?php // Left block posts Reviews loop begins here
                                           $condition = array(
                                                 "post_type"          => "post",
                                                 "post_status"        => "publish",
@@ -80,7 +82,6 @@
                                           while ($block2->have_posts()) : $block2->the_post();?>
 
 <div class="non_featured_block_home_page">
-
 
 <div class="container shadow-sm p-3 mb-2 bg-body rounded"><!-- small non-fetured block-->
 
@@ -109,7 +110,7 @@
 		else :
 		echo '<p>No content found</p>';
 		endif; ?>
-		<?php // Left block posts projects loop begins here
+		<?php // Left block posts Reviews loop begins here
                                           $condition = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
@@ -122,7 +123,9 @@
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
                                           while ($block2->have_posts()) : $block2->the_post();?>
-
+<div class="container">
+	<h2 class=" post_block_title text-dark">Latest <i>Projects</i></h2>
+</div>
 <div class="card rounded rounded-0 border border-0">
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
 <img class="card-img-top rounded rounded-0 featured" src="<?php echo $url ?>" alt="Card image cap" style=" object-fit: cover; height:300px">  <div class="card-body">
@@ -159,5 +162,5 @@
 	</div>
 </div><hr class="d-sm-block d-md-none">
 <div class="d-flex justify-content-center">
-<a href="https://techhobbyist.co.uk/category/reviews/" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More reviews</a>
+<a href="https://techhobbyist.co.uk/category/Reviews/" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More Reviews</a>
 </div>
