@@ -13,12 +13,18 @@
 		else :
 		echo '<p>No content found</p>';
 		endif; ?>
-		<?php // Right small block posts projects loop begins here                                        
-                                          $block1 = new WP_Query('cat=2&posts_per_page=1');
-
-										  if ($block1->have_posts()) :
-
-											while ($block1->have_posts()) : $block1->the_post(); ?>
+		<?php // Right small block posts reviews featured loop begins here
+                                          $condition = array(
+                                                "post_type"           => "post",
+                                                "post_status"         => "publish",
+                                                "orderby"             => "rand",
+                                                "posts_per_page"      => 1,
+												'tag__not_in' => array( 62),
+                                                'category__in' => array( 2 )
+                                          );                                           
+                                          $block1 = new WP_Query ($condition);
+                                          if ($block1->have_posts()) :
+                                          while ($block1->have_posts()) : $block1->the_post();?>
 
 
 <div class="card rounded rounded-0 border border-0 shadow-sm p-3 mb-2 bg-body rounded" style="height:565px;"><!-- non-fetured block-->
@@ -50,7 +56,7 @@
 </div>
 </div>
 
-<?php endwhile;  else :  endif; wp_reset_postdata(); ?>
+<?php endwhile;  else :  endif; wp_reset_postdata(); wp_reset_query();?>
 
 <div class="col-lg-6">
 
@@ -61,11 +67,18 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Left block posts projects loop begins here
-										  $block2 = new WP_Query('cat=2&posts_per_page=3');
-
-										  if ($block2->have_posts()) :
-
-											while ($block2->have_posts()) : $block2->the_post(); ?>
+                                          $condition = array(
+                                                "post_type"          => "post",
+                                                "post_status"        => "publish",
+                                                "orderby"            => "date",
+                                                "posts_per_page"     => 3,
+												'ignore_sticky_posts' => false,
+		              							'tag__not_in' => array( 62),
+                                                'category__in' => array( 2 )
+                                          );                                           
+                                          $block2 = new WP_Query ($condition);
+                                          if ($block2->have_posts()) :
+                                          while ($block2->have_posts()) : $block2->the_post();?>
 
 <div class="non_featured_block_home_page">
 
@@ -84,7 +97,7 @@
   </div>
 </div>
 </div>
-		<?php endwhile;  else :  endif; wp_reset_postdata();?>
+		<?php endwhile;  else :  endif; wp_reset_postdata(); wp_reset_query();?>
 				</div>
 
 <div class="non_featured_block_home_page_mobile">
