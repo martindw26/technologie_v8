@@ -115,8 +115,11 @@
 											"post_status"        => "publish",
 											"orderby"            => "date",
 											"posts_per_page"     => 3,
-											  'tag__not_in' => array( 62),
-											'category__in' => array( 2 )
+											'tag__not_in' => array( 62),
+											'category__in' => array( 2 ),
+											'update_post_term_cache' => false, 
+											'update_post_meta_cache' => false, 
+											'nopaging' => true
                                           );                                           
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
