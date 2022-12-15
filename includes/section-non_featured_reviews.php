@@ -74,8 +74,6 @@
                                                 "post_status"        => "publish",
                                                 "orderby"            => "date",
                                                 "posts_per_page"     => 3,
-												'ignore_sticky_posts' => false,
-		              							'tag__not_in' => array( 62),
                                                 'category__in' => array( 2 )
                                           );                                           
                                           $block2 = new WP_Query ($condition);
