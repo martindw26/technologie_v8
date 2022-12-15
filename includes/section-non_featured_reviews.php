@@ -15,8 +15,10 @@
 		endif; ?>
 		<?php // Right small block posts projects loop begins here                                        
                                           $block1 = new WP_Query('cat=2&posts_per_page=1');
-                                          if ($block1->have_posts()) :
-                                          while ($block1->have_posts()) : $block1->the_post();?>
+
+										  if ($block1->have_posts()) :
+
+											while ($block1->have_posts()) : $block1->the_post(); ?>
 
 
 <div class="card rounded rounded-0 border border-0 shadow-sm p-3 mb-2 bg-body rounded" style="height:565px;"><!-- non-fetured block-->
@@ -60,8 +62,10 @@
 		endif; ?>
 		<?php // Left block posts projects loop begins here
 										  $block2 = new WP_Query('cat=2&posts_per_page=3');
-                                          if ($block2->have_posts()) :
-                                          while ($block2->have_posts()) : $block2->the_post();?>
+
+										  if ($block2->have_posts()) :
+
+											while ($block2->have_posts()) : $block2->the_post(); ?>
 
 <div class="non_featured_block_home_page">
 
