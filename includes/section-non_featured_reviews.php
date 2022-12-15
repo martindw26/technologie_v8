@@ -14,9 +14,11 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 <?php // opinion posts loop begins here
-$block1 = new WP_Query('cat=2&posts_per_page=1');
-if ($block1->have_posts()) :
-while block1->have_posts()) :  $block1->the_post(); ?>
+						$block1 = new WP_Query('cat=7&posts_per_page=2');
+
+						if ($block1->have_posts()) :
+
+							while ($block1->have_posts()) : $block1->the_post(); ?>
 
 
 <div class="card rounded rounded-0 border border-0 shadow-sm p-3 mb-2 bg-body rounded" style="height:565px;"><!-- non-fetured block-->
