@@ -1,6 +1,4 @@
-<div class="container">
-	<h2 class=" post_block_title text-dark">Latest <i>Reviews</i></h2>
-</div>
+
 <div class="container pt-lg-4 pb-lg-4">
 	<div class="row">
 	<div class="col-lg-6">
@@ -26,7 +24,9 @@
                                           if ($block1->have_posts()) :
                                           while ($block1->have_posts()) : $block1->the_post();?>
 
-
+<div class="container">
+	<h2 class=" post_block_title text-dark">Featured <i>Reviews</i></h2>
+</div>
 <div class="card rounded rounded-0 border border-0 shadow-sm p-3 mb-2 bg-body rounded" style="height:565px;"><!-- non-fetured block-->
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
 <img class="card-img-top rounded rounded-1 featured" src="<?php echo $url ?>" alt="Card image cap" style=" object-fit: cover; height:300px">  <div class="card-body">
@@ -80,7 +80,9 @@
                                           while ($block2->have_posts()) : $block2->the_post();?>
 
 <div class="non_featured_block_home_page">
-
+<div class="container">
+	<h2 class=" post_block_title text-dark">Latest <i>Reviews</i></h2>
+</div>
 
 <div class="container shadow-sm p-3 mb-2 bg-body rounded"><!-- small non-fetured block-->
 
@@ -122,7 +124,9 @@
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
                                           while ($block2->have_posts()) : $block2->the_post();?>
-
+<div class="container">
+	<h2 class=" post_block_title text-dark">Latest <i>Reviews</i></h2>
+</div>
 <div class="card rounded rounded-0 border border-0">
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
 <img class="card-img-top rounded rounded-0 featured" src="<?php echo $url ?>" alt="Card image cap" style=" object-fit: cover; height:300px">  <div class="card-body">
