@@ -15,12 +15,10 @@
 		endif; ?>
 		<?php // Right small block posts reviews featured loop begins here
                                           $condition = array(
-                                                "post_type"           => "post",
-                                                "post_status"         => "publish",
-                                                "orderby"             => "date",
-												'post__in' => get_option( 'sticky_posts'), 
-                                                "posts_per_page"      => 1,
-                                                'category__in' => array( 2 )
+											'post__in' => get_option( 'sticky_posts' ),
+											"posts_per_page"      => 1,
+											'category__in' => array( 2 ),
+											'ignore_sticky_posts' => 1
                                           );                                           
                                           $block1 = new WP_Query ($condition);
                                           if ($block1->have_posts()) :
