@@ -74,6 +74,7 @@
                                                 "post_status"        => "publish",
                                                 "orderby"            => "date",
                                                 "posts_per_page"     => 3,
+												'ignore_sticky_posts' => 1,
                                                 'category__in' => array( 2 )
                                           );                                           
                                           $block2 = new WP_Query ($condition);
