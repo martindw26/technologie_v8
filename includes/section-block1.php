@@ -1,5 +1,6 @@
 <div class="container">
-	<h2 class=" post_block_title text-dark"><?php the_sub_field( 'Block_1_title' );?></h2>
+	<?php $Block1Title = get_sub_field( 'Block_1_title' );?>
+	<h2 class=" post_block_title text-dark"><?php echo $Block1Title;?></h2>
 </div>
 <div class="container pt-lg-4 pb-lg-4">
 	<div class="row">
