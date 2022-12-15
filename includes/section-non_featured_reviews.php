@@ -19,8 +19,8 @@
                                                 "post_status"         => "publish",
                                                 "orderby"             => "rand",
                                                 "posts_per_page"      => 1,
-												'tag_id' 			=> 2,
-                                                'category__in' => array( 62 )
+												'tag_id' 			=> 62,
+                                                'category__in' => array( 2 )
                                           );                                           
                                           $block1 = new WP_Query ($condition);
                                           if ($block1->have_posts()) :
