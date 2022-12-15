@@ -8,7 +8,7 @@
                         <?php get_template_part( 'template-parts/landing_page_ads/homepage_header_top_slot_ad' );?>
                         <!-- End Featured Post-->
 
-                        <!-- Reviews Post Block-->
+                        <!-- Post Block 1-->
                         <?php get_template_part('includes/section','non_featured_reviews');?><hr class="container">
                         <!-- End of Reviews Post Block--> 
 
