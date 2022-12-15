@@ -9,7 +9,7 @@
                         <!-- End Featured Post-->
 
                         <!-- Post Block 1-->
-                        <?php get_template_part('includes/section','block1');?><hr class="container">
+                        <?php get_template_part('includes/section','non_featured_reviews');?><hr class="container">
                         <!-- End of Reviews Post Block--> 
 
                         <!-- Header middle adslot-->

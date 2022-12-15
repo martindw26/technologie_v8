@@ -1,6 +1,5 @@
 <div class="container">
-	<?php $Block1Title = get_sub_field( 'Block_1_title' );?>
-	<h2 class=" post_block_title text-dark"><?php echo $Block1Title;?></h2>
+	<h2 class=" post_block_title text-dark">Latest <i>Reviews</i></h2>
 </div>
 <div class="container pt-lg-4 pb-lg-4">
 	<div class="row">
@@ -15,14 +14,13 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Right small block posts projects loop begins here
-		$Block1Category = get_sub_field( 'block_1_category' );
                                           $condition = array(
-                                                "post_type"           	=> "post",
-                                                "post_status"         	=> "publish",
-                                                "orderby"             	=> "rand",
-                                                "posts_per_page"      	=> 1,
-												'tag__not_in' 			=> array( 62),
-                                                'category__in'			=> $Block1Category
+                                                "post_type"           => "post",
+                                                "post_status"         => "publish",
+                                                "orderby"             => "rand",
+                                                "posts_per_page"      => 1,
+												'tag__not_in' => array( 62),
+                                                'category__in' => array( 2 )
                                           );                                           
                                           $block1 = new WP_Query ($condition);
                                           if ($block1->have_posts()) :
@@ -69,14 +67,13 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Left block posts projects loop begins here
-		$Block1Category = get_sub_field( 'block_1_category' );
                                           $condition = array(
-                                                "post_type"          	=> "post",
-                                                "post_status"       	 => "publish",
-                                                "orderby"            	=> "date",
-                                                "posts_per_page"     	=> 3,
-		              							'tag__not_in' 			=> array( 62),
-												'category__in'			=> $Block1Category
+                                                "post_type"          => "post",
+                                                "post_status"        => "publish",
+                                                "orderby"            => "date",
+                                                "posts_per_page"     => 3,
+		              							'tag__not_in' => array( 62),
+                                                'category__in' => array( 2 )
                                           );                                           
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
@@ -113,15 +110,14 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Left block posts projects loop begins here
-		$Block1Category = get_sub_field( 'block_1_category' );
                                           $condition = array(
-                                                "post_type"           	=> "post",
-                                                "post_status"         	=> "publish",
-                                                "orderby"             	=> "date",
-                                                "posts_per_page"      	=> 3,
-		              							"offset"              	=> 1,
-		              							'tag__not_in' 			=> array( 62),
-												'category__in'			=> $Block1Category
+                                                "post_type"           => "post",
+                                                "post_status"         => "publish",
+                                                "orderby"             => "date",
+                                                "posts_per_page"      => 3,
+		              							"offset"              => 1,
+		              							'tag__not_in' => array( 62),
+                                                'category__in' => array( 2 )
                                           );                                           
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
