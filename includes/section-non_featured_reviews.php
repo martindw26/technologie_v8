@@ -13,11 +13,14 @@
 		else :
 		echo '<p>No content found</p>';
 		endif; ?>
+		<?php $stickies = get_option( 'sticky_posts' );?>
 		<?php // Right small block posts reviews featured loop begins here
                                           $condition = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
-                                                "orderby"             => "rand",
+                                                "orderby"             => "date",
+												'post__in'            => $stickies,
+												'ignore_sticky_posts' => 1,
                                                 "posts_per_page"      => 1,
 												'tag__not_in' => array( 62),
                                                 'category__in' => array( 2 )
