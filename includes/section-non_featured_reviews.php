@@ -66,11 +66,7 @@
 		endif; ?>
 		<?php // Left block posts projects loop begins here
                                           $condition2 = array(
-                                                "post_type"          => "post",
-                                                "post_status"        => "publish",
-                                                "orderby"            => "date",
                                                 "posts_per_page"     => 3,
-												'post__not_in' => get_option( 'sticky_posts'), 
                                                 'category__in' => array( 2 )
                                           );                                           
                                           $block2 = new WP_Query ($condition2);
