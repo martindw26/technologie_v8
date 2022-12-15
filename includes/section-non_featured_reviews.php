@@ -13,12 +13,14 @@
 		else :
 		echo '<p>No content found</p>';
 		endif; ?>
-		<?php // Right small block posts reviews featured loop begins here
+		<?php // Right small block posts projects loop begins here
                                           $condition = array(
-											'post__in' => get_option( 'sticky_posts' ),
-											"posts_per_page"      => 1,
-											'cat' => 2 ,
-											'ignore_sticky_posts' => 1
+                                                "post_type"           => "post",
+                                                "post_status"         => "publish",
+                                                "orderby"             => "rand",
+                                                "posts_per_page"      => 1,
+												'tag__not_in' => array( 62),
+                                                'category__in' => array( 2 )
                                           );                                           
                                           $block1 = new WP_Query ($condition);
                                           if ($block1->have_posts()) :
@@ -65,11 +67,15 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Left block posts projects loop begins here
-                                          $condition2 = array(
+                                          $condition = array(
+                                                "post_type"          => "post",
+                                                "post_status"        => "publish",
+                                                "orderby"            => "date",
                                                 "posts_per_page"     => 3,
-                                                'cat' => 2 ,
+		              							'tag__not_in' => array( 62),
+                                                'category__in' => array( 2 )
                                           );                                           
-                                          $block2 = new WP_Query ($condition2);
+                                          $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
                                           while ($block2->have_posts()) : $block2->the_post();?>
 
@@ -90,7 +96,7 @@
   </div>
 </div>
 </div>
-		<?php endwhile;  else :  endif; wp_reset_postdata(); ?>
+		<?php endwhile;  else :  endif; wp_reset_postdata(); wp_reset_query();?>
 				</div>
 
 <div class="non_featured_block_home_page_mobile">
@@ -104,7 +110,7 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Left block posts projects loop begins here
-                                          $condition3 = array(
+                                          $condition = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
                                                 "orderby"             => "date",
@@ -113,9 +119,9 @@
 		              							'tag__not_in' => array( 62),
                                                 'category__in' => array( 2 )
                                           );                                           
-                                          $block3 = new WP_Query ($condition3);
-                                          if ($block3->have_posts()) :
-                                          while ($block3->have_posts()) : $block3->the_post();?>
+                                          $block2 = new WP_Query ($condition);
+                                          if ($block2->have_posts()) :
+                                          while ($block2->have_posts()) : $block2->the_post();?>
 
 <div class="card rounded rounded-0 border border-0">
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
