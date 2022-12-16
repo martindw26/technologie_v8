@@ -1,26 +1,26 @@
-
+<div class="container">
+	<h2 class=" post_block_title text-dark">Latest <i>Projects</i></h2>
+</div>
 <div class="container pt-lg-4 pb-lg-4">
 	<div class="row">
 	<div class="col-lg-6">
 
 
-	<div class="container">
-	<h2 class=" post_block_title text-dark">Featured <i>Projects</i></h2>
-</div>
+
 <?php if (have_posts()) : while (have_posts()) : the_post();
 		the_content();
 		endwhile;
 		else :
 		echo '<p>No content found</p>';
 		endif; ?>
-		<?php // Right small block posts Reviews loop begins here
-                                          $condition = array(
+		<?php // Right small block posts projects loop begins here
+											$condition = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
                                                 "orderby"             => "rand",
                                                 "posts_per_page"      => 1,
-												'tag_id' 			=> 62,
-                                                'category__in' => array( 3 )
+												'tag__not_in' => array( 62),
+												'category__in' => array( 3 ), 
                                           );                                           
                                           $block1 = new WP_Query ($condition);
                                           if ($block1->have_posts()) :
@@ -59,29 +59,28 @@
 <?php endwhile;  else :  endif; wp_reset_postdata();?>
 
 <div class="col-lg-6">
-<div class="container">
-	<h2 class=" post_block_title text-dark">Latest <i>Projects</i></h2>
-</div>
+
 <?php if (have_posts()) : while (have_posts()) : the_post();
 		the_content();
 		endwhile;
 		else :
 		echo '<p>No content found</p>';
 		endif; ?>
-		<?php // Left block posts Reviews loop begins here
-                                          $condition = array(
-                                                "post_type"          => "post",
-                                                "post_status"        => "publish",
-                                                "orderby"            => "date",
-                                                "posts_per_page"     => 3,
-		              							'tag__not_in' => array( 62),
-                                                'category__in' => array( 3 )
+		<?php // Left block posts projects loop begins here
+                                          $condition2 = array(
+											"post_type"          => "post",
+											"post_status"        => "publish",
+											"orderby"            => "date",
+											"posts_per_page"     => 3,
+											'tag__not_in' => array( 62),
+											'category__in' => array( 3 ) 
                                           );                                           
-                                          $block2 = new WP_Query ($condition);
+                                          $block2 = new WP_Query ($condition2);
                                           if ($block2->have_posts()) :
                                           while ($block2->have_posts()) : $block2->the_post();?>
 
 <div class="non_featured_block_home_page">
+
 
 <div class="container shadow-sm p-3 mb-2 bg-body rounded"><!-- small non-fetured block-->
 
@@ -97,10 +96,10 @@
   </div>
 </div>
 </div>
-		<?php endwhile;  else :  endif; wp_reset_postdata();?>
+		<?php endwhile;  else :  endif; wp_reset_postdata();wp_reset_query();?>
 				</div>
 
-<div class="non_featured_block_home_page_mobile">
+
 
 <div class="col-lg-6">
 
@@ -110,22 +109,19 @@
 		else :
 		echo '<p>No content found</p>';
 		endif; ?>
-		<?php // Left block posts Reviews loop begins here
-                                          $condition = array(
-                                                "post_type"           => "post",
-                                                "post_status"         => "publish",
-                                                "orderby"             => "date",
-                                                "posts_per_page"      => 3,
-		              							"offset"              => 1,
-		              							'tag__not_in' => array( 62),
-                                                'category__in' => array( 3 )
+		<?php // Left block posts projects loop begins here
+         
+		                                  $condition = array(
+											"post_type"          => "post",
+											"post_status"        => "publish",
+											"orderby"            => "date",
+											"posts_per_page"     => 2,
+											'category__in' => array( 3 )
                                           );                                           
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
                                           while ($block2->have_posts()) : $block2->the_post();?>
-<div class="container">
-	<h2 class=" post_block_title text-dark">Latest <i>Projects</i></h2>
-</div>
+<div class="non_featured_block_home_page_mobile">
 <div class="card rounded rounded-0 border border-0">
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
 <img class="card-img-top rounded rounded-0 featured" src="<?php echo $url ?>" alt="Card image cap" style=" object-fit: cover; height:300px">  <div class="card-body">
@@ -162,5 +158,5 @@
 	</div>
 </div><hr class="d-sm-block d-md-none">
 <div class="d-flex justify-content-center">
-<a href="https://techhobbyist.co.uk/category/Reviews/" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More Reviews</a>
+<a href="https://techhobbyist.co.uk/category/reviews/" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More reviews</a>
 </div>
