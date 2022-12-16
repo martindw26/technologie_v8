@@ -73,7 +73,6 @@
 											"orderby"            => "date",
 											"offset"     		 => 1,
 											"posts_per_page"     => 3,
-											'tag__not_in' => array( 62),
 											'category__in' => array( 2 ) 
                                           );                                           
                                           $block2 = new WP_Query ($condition2);
