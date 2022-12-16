@@ -71,6 +71,7 @@
 											"post_type"          => "post",
 											"post_status"        => "publish",
 											"orderby"            => "date",
+											"offset"     		 => 1,
 											"posts_per_page"     => 3,
 											'tag__not_in' => array( 62),
 											'category__in' => array( 2 ) 
