@@ -76,10 +76,12 @@
 		endif; ?>
 		<?php // Left block posts projects loop begins here
         $category = get_field ( 'block_1_category' );
+		$block1Offset = get_field ( 'block_1_right_offset' );
 		$condition2 = array(
 										"post_type"           => "post",
 										"post_status"         => "publish",
 										"orderby"             => "date",
+										"offset"             => $block1Offset,
 										"posts_per_page"      => 3,
 										'tag__not_in' => array( 62),
 										'tax_query' => array(
@@ -129,7 +131,7 @@
 											"post_type"          => "post",
 											"post_status"        => "publish",
 											"orderby"            => "date",
-											"posts_per_page"     => 2,
+											"posts_per_page"     => 3,
 											'category__in' => array( 2 )
                                           );                                           
                                           $block2 = new WP_Query ($condition);
