@@ -102,7 +102,7 @@
   <div class="col"><img class="img-fluid featured rounded rounded-1" src="<?php echo $url ?>" style="height:150px";>
 </div>
     <div class="col-6">
-    <p class="card-title fw-bold"><?php echo get_the_title();?></p>
+    <h4 class="card-title fw-bold"><?php echo get_the_title();?></h4>
 	<p class="card-text text-muted">Article by: <?php echo get_the_author();?></i>,   Posted: <i><?php echo get_the_date();?></i><?php if($read_time):?> | Read time: <?php echo $read_time ?><?php endif ?></p>
 	<a href="<?php the_permalink() ?>" class="btn btn-sm btn-dark text-white m-0">Read More</a></div>
 
