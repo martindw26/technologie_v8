@@ -83,7 +83,7 @@
 										"orderby"             => "date",
 										"offset"             => $block1Offset,
 										"posts_per_page"      => 3,
-										'tag__not_in' => array( 62),
+
 										'tax_query' => array(
 											array(
 											'taxonomy' => 'category',
