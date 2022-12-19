@@ -21,7 +21,7 @@
                                                 "orderby"             => "date",
                                                 "posts_per_page"      => 1,
 												'tag__not_in' => array( 62),
-												'category__in' => array( $category ), 
+												'category__in' => array( $category ) 
                                           );                                           
                                           $block1 = new WP_Query ($condition);
                                           if ($block1->have_posts()) :
