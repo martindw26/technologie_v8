@@ -75,7 +75,7 @@
 		endif; ?>
 		<?php // Left block posts projects loop begins here
         $category = get_field ( 'block_1_category' );
-										$condition = array(
+										$condition2 = array(
 										"post_type"           => "post",
 										"post_status"         => "publish",
 										"orderby"             => "date",
@@ -87,7 +87,7 @@
 												'field'    => 'term_id', 
 												'terms'    => $category,
 											),
-										),
+											),
 										);                                            
                                           $block2 = new WP_Query ($condition2);
                                           if ($block2->have_posts()) :
