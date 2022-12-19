@@ -14,13 +14,14 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Right small block posts projects loop begins here
+		$category = get_field ( 'block_1_category' );
 											$condition = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
                                                 "orderby"             => "date",
                                                 "posts_per_page"      => 1,
 												'tag__not_in' => array( 62),
-												'category__in' => array( 2 ), 
+												'category__in' => array( $category ), 
                                           );                                           
                                           $block1 = new WP_Query ($condition);
                                           if ($block1->have_posts()) :
