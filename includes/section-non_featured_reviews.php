@@ -21,8 +21,14 @@
                                                 "orderby"             => "date",
                                                 "posts_per_page"      => 1,
 												'tag__not_in' => array( 62),
-												'category_name' => $category
-                                          );                                           
+												'tax_query' => array(
+													array(
+													  'taxonomy' => 'category',
+													  'field'    => 'term_id', 
+													  'terms'    => $category,
+													),
+												),
+												);                                           
                                           $block1 = new WP_Query ($condition);
                                           if ($block1->have_posts()) :
                                           while ($block1->have_posts()) : $block1->the_post();?>
