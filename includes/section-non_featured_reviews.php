@@ -14,7 +14,7 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Right small block posts projects loop begins here
-		$category = get_field ( 'block_1_category' );
+		$category = get_field('block_1_category');
 											$condition = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
