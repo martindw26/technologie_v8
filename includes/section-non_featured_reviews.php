@@ -79,7 +79,7 @@
 										"post_type"           => "post",
 										"post_status"         => "publish",
 										"orderby"             => "date",
-										"posts_per_page"      => 1,
+										"posts_per_page"      => 3,
 										'tag__not_in' => array( 62),
 										'tax_query' => array(
 											array(
