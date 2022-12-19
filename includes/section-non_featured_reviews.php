@@ -172,5 +172,6 @@
 	</div>
 </div><hr class="d-sm-block d-md-none">
 <div class="d-flex justify-content-center">
-<a href="https://techhobbyist.co.uk/category/reviews/" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More reviews</a>
+<?php $Block1MoreURL = get_field( 'block_1_more_url' );?>
+<a href="<?php echo $Block1MoreURL;?>" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More reviews</a>
 </div>
