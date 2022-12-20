@@ -16,7 +16,7 @@
 		endif; ?>
 		<?php // Right small block posts projects loop begins here
 		$category2 = get_field ( 'block_2_category' );
-											$condition = array(
+											$condition3 = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
                                                 "orderby"             => "date",
@@ -30,9 +30,9 @@
 													),
 												),
 												);                                           
-                                          $block2 = new WP_Query ($condition);
-                                          if ($block2->have_posts()) :
-                                          while ($block2->have_posts()) : $block2->the_post();?>
+                                          $block4 = new WP_Query ($condition3);
+                                          if ($block4->have_posts()) :
+                                          while ($block4->have_posts()) : $block4->the_post();?>
 
 
 <div class="card rounded rounded-0 border border-0 shadow-sm p-3 mb-2 bg-body rounded" style="max-height:600px;"><!-- non-fetured block-->
@@ -77,7 +77,7 @@
 		<?php // Left block posts projects loop begins here
         $category2 = get_field ( 'block_2_category' );
 		$block2Offset = get_field ( 'block_2_right_offset' );
-		$condition3 = array(
+		$condition4 = array(
 										"post_type"           => "post",
 										"post_status"         => "publish",
 										"orderby"             => "date",
@@ -91,9 +91,9 @@
 											),
 										),
 										);                                           
-								$block3 = new WP_Query ($condition3);
-								if ($block3->have_posts()) :
-								while ($block3->have_posts()) : $block3->the_post();?>
+								$block3 = new WP_Query ($condition4);
+								if ($block5->have_posts()) :
+								while ($block5->have_posts()) : $block5->the_post();?>
 <div class="non_featured_block_home_page">
 
 
@@ -127,7 +127,7 @@
 		<?php // Left block posts projects loop begins here
          $category2 = get_field ( 'block_2_category' );
 		 $block2Offset = get_field ( 'block_2_right_offset' );
-		 $condition3 = array(
+		 $condition4 = array(
 										 "post_type"           => "post",
 										 "post_status"         => "publish",
 										 "orderby"             => "date",
@@ -141,7 +141,7 @@
 											 ),
 										 ),
 										 );                                      
-                                          $block3 = new WP_Query ($condition3);
+                                          $block3 = new WP_Query ($condition4);
                                           if ($block3->have_posts()) :
                                           while ($block3->have_posts()) : $block3->the_post();?>
 <div class="non_featured_block_home_page_mobile">

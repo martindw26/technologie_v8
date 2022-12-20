@@ -140,7 +140,7 @@
 											 'terms'    => $category,
 											 ),
 										 ),
-										 );                                      
+										 );                                
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
                                           while ($block2->have_posts()) : $block2->the_post();?>
