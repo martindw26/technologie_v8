@@ -141,7 +141,7 @@
 											 ),
 										 ),
 										 );                                
-                                          $block2 = new WP_Query ($condition);
+                                          $block2 = new WP_Query ($condition2);
                                           if ($block2->have_posts()) :
                                           while ($block2->have_posts()) : $block2->the_post();?>
 <div class="non_featured_block_home_page_mobile">
