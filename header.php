@@ -19,15 +19,16 @@
 <?php get_template_part( 'template-parts/helpers/collapse' );?>
 <!-- END Collapse.js -->
 
-<!-- Web Vitals-->
-<?php get_template_part( 'template-parts/theme/components/vitals' );?>
-<!-- END Web Vitals -->
+<!-- Web console-log-->
+<?php get_template_part( 'template-parts/theme/components/console-log' );?>
+<!-- END console-log -->
 
 <!-- Ad head scripts-->
 <?php  if ( locate_template( 'template-parts/theme/components/adshead' ) ) {
    get_template_part( 'template-parts/theme/components/adshead' );    
 }
-<!-- END Ad head scripts -->
+?>
+<!-- End Ad head scripts -->
 
 </head>
 <?php $enable_header_on = get_field('header_on','option');?>
