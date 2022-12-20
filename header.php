@@ -19,6 +19,10 @@
 <?php get_template_part( 'template-parts/helpers/collapse' );?>
 <!-- END Collapse.js -->
 
+<!-- Web Vitals-->
+<?php get_template_part( 'template-parts/theme/components/web-vitals' );?>
+<!-- END MPU Bottom ad head script -->
+
 <!-- Ad head scripts-->
 <?php get_template_part( 'template-parts/theme/components/adshead' );?>
 <!-- END MPU Bottom ad head script -->
