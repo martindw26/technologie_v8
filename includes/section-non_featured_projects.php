@@ -182,5 +182,5 @@
 </div><hr class="d-sm-block d-md-none">
 <div class="d-flex justify-content-center">
 <?php $Block1MoreURL = get_field( 'block_2_more_url' );?>
-<a href="<?php echo $Block1MoreURL;?>" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More reviews</a>
+<a href="<?php echo $Block1MoreURL;?>" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More <?php echo $Block2Title;?></a>
 </div>
