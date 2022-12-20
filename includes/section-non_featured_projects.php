@@ -94,10 +94,10 @@
 								$block3 = new WP_Query ($condition3);
 								if ($block3->have_posts()) :
 								while ($block3->have_posts()) : $block3->the_post();?>
-<div class="non_featured_block_home_page">
+<div class="non_featured_block_home_page" style="height:545px;">
 
 
-<div class="container shadow-sm p-4 mb-2 bg-body rounded"><!-- small non-fetured block-->
+<div class="container shadow-sm p-3 mb-2 bg-body rounded"><!-- small non-fetured block-->
 
 <div class="row">
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
