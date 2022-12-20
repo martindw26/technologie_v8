@@ -20,12 +20,14 @@
 <!-- END Collapse.js -->
 
 <!-- Web Vitals-->
-<?php get_template_part( 'template-parts/theme/components/web-vitals' );?>
-<!-- END MPU Bottom ad head script -->
+<?php get_template_part( 'template-parts/theme/components/vitals' );?>
+<!-- END Web Vitals -->
 
 <!-- Ad head scripts-->
-<?php get_template_part( 'template-parts/theme/components/adshead' );?>
-<!-- END MPU Bottom ad head script -->
+<?php  if ( locate_template( 'template-parts/theme/components/adshead' ) ) {
+   get_template_part( 'template-parts/theme/components/adshead' );    
+}
+<!-- END Ad head scripts -->
 
 </head>
 <?php $enable_header_on = get_field('header_on','option');?>
