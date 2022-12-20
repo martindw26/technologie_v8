@@ -1,22 +1,6 @@
-<?php
-	$allowed_html = array(
-    'script' => array(
-        'type'        => array(),
-        'id'          => array(),
-        'name'        => array(),
-        'value'       => array()
-     ),
-	 'div' => array(
-        'id'        => array(),
-        'class'     => array(),
-     ),
-);
-?>
-
-
 <!-- Homepage top ad head script -->
 <?php if( get_field( 'header_ad_top_slot_head','option' ) ): ?>
-<?php (the_field( 'header_ad_top_slot_head','option' ), $allowed_html ); ?>
+<?php the_field( 'header_ad_top_slot_head','option' ); ?>
 <?php endif; ?>
 <!-- END Homepage top ad head script -->
 
