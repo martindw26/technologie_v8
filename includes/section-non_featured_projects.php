@@ -91,7 +91,7 @@
 											),
 										),
 										);                                           
-								$block3 = new WP_Query ($condition4);
+								$block5 = new WP_Query ($condition4);
 								if ($block5->have_posts()) :
 								while ($block5->have_posts()) : $block5->the_post();?>
 <div class="non_featured_block_home_page">
@@ -141,9 +141,9 @@
 											 ),
 										 ),
 										 );                                      
-                                          $block3 = new WP_Query ($condition4);
-                                          if ($block3->have_posts()) :
-                                          while ($block3->have_posts()) : $block3->the_post();?>
+                                          $block5 = new WP_Query ($condition4);
+                                          if ($block5->have_posts()) :
+                                          while ($block5->have_posts()) : $block5->the_post();?>
 <div class="non_featured_block_home_page_mobile">
 <div class="card rounded rounded-0 border border-0">
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
