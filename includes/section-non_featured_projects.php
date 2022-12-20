@@ -35,7 +35,7 @@
                                           while ($block2->have_posts()) : $block2->the_post();?>
 
 
-<div class="card rounded rounded-0 border border-0 shadow-sm p-3 mb-2 bg-body rounded" style="min-height:670px; max-height:670px;"><!-- non-fetured block-->
+<div class="card rounded rounded-0 border border-0 shadow-sm p-3 mb-2 bg-body rounded" style="max-height:670px;"><!-- non-fetured block-->
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
 <img class="card-img-top rounded rounded-1 featured" src="<?php echo $url ?>" alt="Card image cap" style=" object-fit: cover; height:300px">  <div class="card-body">
     <h4 class="card-title fw-bold"><?php echo get_the_title();?></h4>
