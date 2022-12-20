@@ -24,10 +24,7 @@
 <!-- END console-log -->
 
 <!-- Ad head scripts-->
-<?php  if ( locate_template( 'template-parts/theme/components/adshead' ) ) {
-   get_template_part( 'template-parts/theme/components/adshead' );    
-}
-?>
+<?php get_template_part( 'template-parts/theme/components/adshead' );?>
 <!-- End Ad head scripts -->
 
 </head>
