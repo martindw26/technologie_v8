@@ -16,9 +16,13 @@
 
 <!-- MPU Top ad head script -->
 <?php if( get_field( 'mpu_top_slot_head_script','option' ) ): ?>
-<?php echo wp_kses(get_field( 'mpu_top_slot_head_script', 'option' ), $allowed_html) ; ?>
+<?php the_field( 'header_ad_top_slot_head','option' ); ?>
 <?php endif; ?>
 <!-- END MPU Top ad head script -->
+
+	<?php if ( get_field( 'mpu_top_slot_head_script', 'options' )) : ?>
+		<?php echo wp_kses(get_field( 'mpu_top_slot_head_script', 'options' ), $allowed_html) ; ?>
+	<?php endif; ?>
 
 <!-- MPU Bottom ad head script -->
 <?php if( get_field( 'mpu_bottom_slot_head_script','option' ) ): ?>
