@@ -458,6 +458,12 @@ img.featured:hover {
   }
 }
 
+@media screen and (min-width: 600px) {
+  .non_featured_block_home_page_mobile{
+    display: none!important;
+  }
+}
+
 /* Rating statement styling*/
 
 div#rating_statement_difficulty {
