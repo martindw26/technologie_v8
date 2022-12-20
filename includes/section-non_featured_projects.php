@@ -1,6 +1,6 @@
 <div class="container">
 	<?php $Block2Title = get_field ( 'block_2_title' );?>
-	<h2 class=" post_block_title text-dark">Latest <i><?php echo $Block1Title;?></i></h2>
+	<h2 class=" post_block_title text-dark">Latest <i><?php echo $Block2Title;?></i></h2>
 </div>
 <div class="container pt-lg-4 pb-lg-4">
 	<div class="row">
