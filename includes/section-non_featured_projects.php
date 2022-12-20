@@ -97,7 +97,7 @@
 <div class="non_featured_block_home_page">
 
 
-<div class="container shadow-sm p-3 mb-2 bg-body rounded" style="height:545px;"><!-- small non-fetured block-->
+<div class="container shadow-sm p-3 mb-2 bg-body rounded" style="height:200px;"><!-- small non-fetured block-->
 
 <div class="row">
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
