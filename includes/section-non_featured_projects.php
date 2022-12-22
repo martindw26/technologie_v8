@@ -1,6 +1,6 @@
 <div class="container">
-	<?php $Block1Title = get_field ( 'Block_1_title' );?>
-	<h2 class=" post_block_title text-dark">Latest <i><?php echo $Block1Title;?></i></h2>
+	<?php $Block1Title = get_field ( 'Block_2_title' );?>
+	<h2 class=" post_block_title text-dark">Latest <i><?php echo $Block2Title;?></i></h2>
 </div>
 <div class="container pt-lg-4 pb-lg-4">
 	<div class="row">
@@ -15,7 +15,7 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Right small block posts projects loop begins here
-		$category = get_field ( 'block_1_category' );
+		$category2 = get_field ( 'block_2_category' );
 											$condition = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
@@ -26,7 +26,7 @@
 													array(
 													  'taxonomy' => 'category',
 													  'field'    => 'term_id', 
-													  'terms'    => $category,
+													  'terms'    => $category2,
 													),
 												),
 												);                                           
@@ -75,8 +75,8 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Left block posts projects loop begins here
-        $category = get_field ( 'block_1_category' );
-		$block1Offset = get_field ( 'block_1_right_offset' );
+        $category2 = get_field ( 'block_2_category' );
+		$block1Offset = get_field ( 'block_2_right_offset' );
 		$condition2 = array(
 										"post_type"           => "post",
 										"post_status"         => "publish",
@@ -87,7 +87,7 @@
 											array(
 											'taxonomy' => 'category',
 											'field'    => 'term_id', 
-											'terms'    => $category,
+											'terms'    => $category2,
 											),
 										),
 										);                                           
@@ -125,8 +125,8 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Left block posts projects loop begins here
-         $category = get_field ( 'block_1_category' );
-		 $block1Offset = get_field ( 'block_1_right_offset' );
+         $category2 = get_field ( 'block_2_category' );
+		 $block1Offset = get_field ( 'block_2_right_offset' );
 		 $condition2 = array(
 										 "post_type"           => "post",
 										 "post_status"         => "publish",
@@ -137,7 +137,7 @@
 											 array(
 											 'taxonomy' => 'category',
 											 'field'    => 'term_id', 
-											 'terms'    => $category,
+											 'terms'    => $category2,
 											 ),
 										 ),
 										 );                                
