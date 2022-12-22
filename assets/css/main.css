@@ -103,6 +103,38 @@ p.header-social{ background-color: black;}
   padding: 2rem 0;
 }
 
+/*logo resposive CSS */
+
+@media (min-width: 768px) {
+  .mobile-logo{
+    display: none;
+
+  }
+}
+
+@media (max-width:480px ){
+.mobile-logo{
+  display: block;
+
+}
+}
+
+@media (min-width: 768px) {
+.desktop-logo{
+  display: block;
+
+}
+}
+
+@media (max-width:480px ){
+.desktop-logo{
+display: none;
+
+}
+}
+
+/*End logo responsive css*/
+
 /* Style the top navigation bar */
 
 .topnav {
