@@ -1,0 +1,9 @@
+<div class="sticky-top mt-1">
+<div class="mb-1 mt-1 bg-dark border rounded " style="height:350px;>
+
+        <p class="text-middle text-muted"></p>
+            
+        <?php if (function_exists ('adinserter')) echo adinserter (2); ?>
+
+</div>
+</div>

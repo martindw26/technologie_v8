@@ -9,7 +9,7 @@ $post_id = get_field('post_id');
 //relared post loop begins here
 
 $args = array(
-					'post_type' 			=> 'post',
+					'post_type' 				=> 'post',
 					'post_status' 			=> 'publish',
 					'post__in'				=> $post_id
 

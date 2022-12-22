@@ -1,7 +1,6 @@
 <div class="">
 <h3 class="post_block_title text-dark d-flex justify-content-center">You may also like 
 </h3><hr>
-<?php get_template_part( 'template-parts/ads_body/top/section/top_mpu_placement' );?>
 <div class="">
 <?php if (have_posts()) : while (have_posts()) : the_post();
 the_content();
@@ -55,5 +54,3 @@ while ($block1->have_posts()) : $block1->the_post();?>
 
 </div>
 </div>
-
-<?php get_template_part( 'template-parts/ads_body/bottom/section/bottom_mpu_placement' );?>

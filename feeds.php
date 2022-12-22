@@ -13,9 +13,8 @@
 
             <h1 class=" display-2 font-weight-bold text-dark" style=""><?php $feed = the_field('page_title');?></h1>
 
-          <div class=" bg-secondary text-light p-4 mb-4 border-dark lead">
-          <div><?php the_field('description');?></div> 
-          </div>
+
+
 
 
 				<!-- Social share icons-->
