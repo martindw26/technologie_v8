@@ -1,5 +1,5 @@
 <div class="container">
-	<?php $Block1Title = get_field ( 'Block_2_title' );?>
+	<?php $Block1Title = get_field ( 'block_2_title' );?>
 	<h2 class=" post_block_title text-dark">Latest <i><?php echo $Block2Title;?></i></h2>
 </div>
 <div class="container pt-lg-4 pb-lg-4">
@@ -181,6 +181,6 @@
 	</div>
 </div><hr class="d-sm-block d-md-none">
 <div class="d-flex justify-content-center">
-<?php $Block1MoreURL = get_field( 'block_1_more_url' );?>
-<a href="<?php echo $Block1MoreURL;?>" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More <?php echo $Block1Title;?></a>
+<?php $Block1MoreURL = get_field( 'block_2_more_url' );?>
+<a href="<?php echo $Block1MoreURL;?>" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More <?php echo $Block2Title;?></a>
 </div>
