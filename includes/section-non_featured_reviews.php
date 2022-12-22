@@ -99,7 +99,7 @@
 		<?php endwhile;  else :  endif; wp_reset_postdata();?>
 				</div>
 
-<div class="non_featured_block_home_page_mobile">
+
 
 <div class="col-lg-6">
 
@@ -121,7 +121,7 @@
                                           $block2 = new WP_Query ($condition);
                                           if ($block2->have_posts()) :
                                           while ($block2->have_posts()) : $block2->the_post();?>
-
+<div class="non_featured_block_home_page_mobile">
 <div class="card rounded rounded-0 border border-0">
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
 <img class="card-img-top rounded rounded-0 featured" src="<?php echo $url ?>" alt="Card image cap" style=" object-fit: cover; height:300px">  <div class="card-body">
