@@ -379,7 +379,7 @@ img.featured:hover {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 600px) {
   .non_featured_block_home_page_mobile{
     display: none!important;
   }
