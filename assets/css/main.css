@@ -73,6 +73,18 @@ background-color:
         }
       }
 
+      @media screen and (min-width: 480px) {
+        .commerce_hp_mobile{
+          display: none!important;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .commerce_hp_desktop{
+          display: none!important;
+        }
+      }
+
 /*###### Ads CSS ######*/
 
 
