@@ -5,7 +5,7 @@
 <?php get_header();?>
 
                         <!-- Header adslot-->
-                        <?php get_template_part( 'template-parts/landing_page_ads/homepage_header_top_slot_ad' );?>
+                        <?php get_template_part( 'landing_page_ads/homepage_header_top_slot_ad' );?>
                         <!-- End Featured Post-->
 
                         <!-- Post Block 1-->
