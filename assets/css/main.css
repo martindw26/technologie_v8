@@ -52,12 +52,45 @@ background-color:
 
 /*Ads*/
 
+.ad{
+   margin: 0 auto!important;
+}
+
+
+@media (min-width: 768px) {
+    .commerce_hp_mobile{
+      display: none;
+ 
+    }
+}
+
+@media (max-width:480px ){
+  .commerce_hp_mobile{
+    display: block;
+ 
+  }
+}
+
+@media (min-width: 768px) {
+  .commerce_hp_desktop{
+    display: block;
+
+  }
+}
+
+@media (max-width:480px ){
+.commerce_hp_desktop{
+  display: none;
+
+}
+}
+
       @media (min-width: 768px) {
         .Home_Page_MPU_adslot {
           min-height: 610px;
           max-height: 610px;
           width:310px;
-          background-color:#f8f8f8;
+          background-color:#dee2e6;
           margin: 0 auto;
         }
       }
@@ -68,10 +101,12 @@ background-color:
           min-height: 310px;
           max-height: 310px;
           width:310px;
-          background-color:#f8f8f8;
+          background-color:#dee2e6;;
           margin: 0 auto;
         }
       }
+
+
 
 /*###### Ads CSS ######*/
 
@@ -90,6 +125,38 @@ p.header-social{ background-color: black;}
 .page-wrap{
   padding: 2rem 0;
 }
+
+/*logo resposive CSS */
+
+@media (min-width: 768px) {
+  .mobile-logo{
+    display: none;
+
+  }
+}
+
+@media (max-width:480px ){
+.mobile-logo{
+  display: block;
+
+}
+}
+
+@media (min-width: 768px) {
+.desktop-logo{
+  display: block;
+
+}
+}
+
+@media (max-width:480px ){
+.desktop-logo{
+display: none;
+
+}
+}
+
+/*End logo responsive css*/
 
 /* Style the top navigation bar */
 
@@ -126,7 +193,7 @@ p.header-social{ background-color: black;}
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
-    display: block;
+    display: flex;
   }
 }
 
@@ -139,11 +206,17 @@ p.header-social{ background-color: black;}
   }
   .topnav.responsive a {
     float: none;
-    display: block;
+    display: flex;
     text-align: left;
   }
 }
 
+
+@media screen and (max-width: 600px) {
+ul#menu-primary {
+  display: contents!important;
+}
+}
 
 .menu-item, .menu-item-type-post_type, .menu-item-object-post, .menu-item-1112 {
     list-style-type: none;
@@ -379,7 +452,13 @@ img.featured:hover {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
+  .non_featured_block_home_page_mobile{
+    display: none!important;
+  }
+}
+
+@media screen and (min-width: 600px) {
   .non_featured_block_home_page_mobile{
     display: none!important;
   }
