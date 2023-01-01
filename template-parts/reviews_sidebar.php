@@ -1,6 +1,8 @@
 <div class="">
 
-
+<!-- Header adslot-->
+<?php get_template_part( 'template-parts/ads_body/top_mpu_ad.php' );?>
+<!-- End Featured Post-->
 
 <h3 class="post_block_title text-dark d-flex justify-content-center">You may also like these
 <?php 
@@ -21,9 +23,9 @@ $condition = array(
 "post_type"          	=> "post",
 "post_status"         	=> "publish",
 "posts_per_page"      	=> 2,
-"orderby"               	=> 'date',
-'offset' 		=> 0,
-'cat' 		=> 2,
+"orderby"               => 'date',
+'offset' 				=> 0,
+'cat' 					=> 2,
 );$block1 = new WP_Query ($condition);
 if ($block1->have_posts()) :
 while ($block1->have_posts()) : $block1->the_post();?>
