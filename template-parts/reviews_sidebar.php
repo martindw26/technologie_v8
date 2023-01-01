@@ -1,9 +1,5 @@
 <div class="">
 
-<!-- Header adslot-->
-<?php get_template_part( 'template-parts/ads_body/top/section/top_mpu_placement.php' );?>
-<!-- End Featured Post-->
-
 <h3 class="post_block_title text-dark d-flex justify-content-center">You may also like these
 <?php 
 	foreach((get_the_category()) as $category){
@@ -31,6 +27,9 @@ if ($block1->have_posts()) :
 while ($block1->have_posts()) : $block1->the_post();?>
 <!-- Blog post-->
 
+<!-- Header adslot-->
+<?php get_template_part( 'template-parts/ads_body/top/section/top_mpu_placement.php' );?>
+<!-- End Featured Post-->
 
 <div class="col">
  <div class="card rounded rounded-0 border border-1">
