@@ -29,7 +29,7 @@ while ($block1->have_posts()) : $block1->the_post();?>
 
 <div class="col">
 	<!-- Header adslot-->
-<?php get_template_part( 'template-parts/ads_body/top/section/top_mpu_placement.php' );?>
+<?php get_template_part( 'template-parts/ads_body/top/section/top_mpu_placement' );?>
 <!-- End Featured Post-->
  <div class="card rounded rounded-0 border border-1">
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
