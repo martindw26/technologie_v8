@@ -62,4 +62,6 @@ while ($block1->have_posts()) : $block1->the_post();?>
 <?php endwhile;  else :  endif; wp_reset_postdata();?>
 </div>
 </div>
-<br>    
+<!-- Bottom MPU adslot-->
+<?php get_template_part( 'template-parts/ads_body/bottom/section/bottom_mpu_placement' );?>
+<!-- End Bottom MPU adslot -->    

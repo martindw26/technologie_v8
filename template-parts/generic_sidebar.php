@@ -20,7 +20,10 @@ if ($block1->have_posts()) :
 while ($block1->have_posts()) : $block1->the_post();?>
 <!-- Blog post-->
 <div class="col">
- <div class="card rounded rounded-0 border border-1">
+<!-- Top MPU adslot-->
+<?php get_template_part( 'template-parts/ads_body/top/section/top_mpu_placement' );?>
+<!-- End Top MPU adslot -->
+<div class="card rounded rounded-0 border border-1">
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
 <img class="card-img-top rounded rounded-0 featured" src="<?php echo $url ?>" alt="Card image cap" style=" object-fit: cover; height:300px">  <div class="card-body">
     <h6 class="card-title fw-bold"><?php echo get_the_title();?></h6>
@@ -50,7 +53,8 @@ while ($block1->have_posts()) : $block1->the_post();?>
 </div>
 </div><br>
 <?php endwhile;  else :  endif; wp_reset_postdata();?>
-
-
 </div>
 </div>
+<!-- Bottom MPU adslot-->
+<?php get_template_part( 'template-parts/ads_body/bottom/section/bottom_mpu_placement' );?>
+<!-- End Bottom MPU adslot -->
