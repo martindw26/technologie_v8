@@ -1,7 +1,7 @@
 <div class="">
 
 <!-- Header adslot-->
-<?php get_template_part( 'template-parts/ads_body/top_mpu_ad.php' );?>
+<?php get_template_part( 'template-parts/ads_body/top/section/top_mpu_placement.php' );?>
 <!-- End Featured Post-->
 
 <h3 class="post_block_title text-dark d-flex justify-content-center">You may also like these
