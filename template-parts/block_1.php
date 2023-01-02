@@ -15,7 +15,7 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Right small block posts projects loop begins here
-		$training_category1 = get_field ( 'training_block_1_category' );
+		$lead_training_post1 = get_field ( 'training_block_1_category' );
 											$tcondition1 = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
@@ -24,9 +24,9 @@
 												'tag__not_in' => array( 62),
 												'tax_query' => array(
 													array(
-													  'taxonomy' => 'category',
-													  'field'    => 'term_id', 
-													  'terms'    => $training_category1,
+													  'taxonomy' => 'post',
+													  'field'    => 'ids', 
+													  'terms'    => $lead_training_post1,
 													),
 												),
 												);                                           
