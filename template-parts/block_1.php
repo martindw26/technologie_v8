@@ -66,7 +66,7 @@
 										"posts_per_page"      => 3,
                                         'meta_key'            => 'number',
                                         'orderby'             => 'meta_value_num',
-                                        'order'               => 'ASC'
+                                        'order'               => 'ASC',
 										'tax_query' => array(
 											array(
 											'taxonomy' => 'category',
