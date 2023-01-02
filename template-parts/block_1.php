@@ -155,6 +155,6 @@
 	</div>
 </div><hr class="d-sm-block d-md-none">
 <div class="d-flex justify-content-center">
-<?php $tBlock2MoreURL = get_field( 'tblock_2_more_url' );?>
+<?php $tBlock1MoreURL = get_field( 'tBlock1MoreURL' );?>
 <a href="<?php echo $tBlock1MoreURL;?>" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More <?php echo $trainingblock1title;?> tutorials</a>
 </div>
