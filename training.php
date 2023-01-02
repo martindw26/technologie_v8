@@ -9,7 +9,7 @@
                         <!-- End Featured Post-->
 
                         <!-- Post Block 1-->
-                        <?php get_template_part('includes/section','block_1');?><hr class="container">
+                        <?php get_template_part('includes','block_1');?><hr class="container">
                         <!-- End of Post Block--> 
 
                         <!-- Header middle adslot-->
