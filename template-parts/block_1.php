@@ -61,10 +61,12 @@
 		$tcondition2 = array(
 										"post_type"           => "post",
 										"post_status"         => "publish",
-										"orderby"             => "title",
 										"offset"              => $block1Offset,
                                         'post__not_in'		  => $training_block_1_left_post_exclude,
 										"posts_per_page"      => 3,
+                                        'meta_key'            => 'number',
+                                        'orderby'             => 'meta_value_num',
+                                        'order'               => 'ASC'
 										'tax_query' => array(
 											array(
 											'taxonomy' => 'category',
