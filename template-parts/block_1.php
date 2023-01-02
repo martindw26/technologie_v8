@@ -16,12 +16,11 @@
 		endif; ?>
 		<?php // Right small block posts projects loop begins here
 		$lead_training_post1 = get_field ( 'training_block_1_right_post' );
-        $training_block_1_left_post_exclude = get_field ( 'training_block_1_left_post_exclude' );
 											$tcondition1 = array(
                                                 'post_type' 			=> 'post',
                                                 'post_status' 			=> 'publish',
                                                 'post__in'				=> $lead_training_post1,
-                                                'post__not_in'			=> $training_block_1_left_post_exclude
+                                                
                             
                                                 );                                       
                                           $tblock1 = new WP_Query ($tcondition1);
@@ -57,12 +56,14 @@
 		endif; ?>
 		<?php // Left block posts projects loop begins here
         $training_category1 = get_field ( 'training_block_1_category' );
+        $training_block_1_left_post_exclude = get_field ( 'training_block_1_left_post_exclude' );
 		$tblock1Offset = get_field ( 'tblock1Offset' );
 		$tcondition2 = array(
 										"post_type"           => "post",
 										"post_status"         => "publish",
 										"orderby"             => "date",
 										"offset"             => $block1Offset,
+                                        'post__not_in'			=> $training_block_1_left_post_exclude
 										"posts_per_page"      => 3,
 										'tax_query' => array(
 											array(
