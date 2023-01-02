@@ -1,6 +1,6 @@
 <div class="container">
-	<?php $TrainingBlock1Title = get_field ( 'training_block_1_title' );?>
-	<h2 class=" post_block_title text-dark"><i><?php echo $TrainingBlock1Title;?></i></h2>
+	<?php $trainingblock1title = get_field ( 'trainingblock1title' );?>
+	<h2 class=" post_block_title text-dark"><i><?php echo $trainingblock1title;?></i></h2>
 </div>
 <div class="container pt-lg-4 pb-lg-4">
 	<div class="row">
@@ -63,7 +63,7 @@
 		endif; ?>
 		<?php // Left block posts projects loop begins here
         $training_category2 = get_field ( 'training_block_2_category' );
-		$block1Offset = get_field ( 'block_2_right_offset' );
+		$tblock1Offset = get_field ( 'tblock1Offset' );
 		$tcondition2 = array(
 										"post_type"           => "post",
 										"post_status"         => "publish",
