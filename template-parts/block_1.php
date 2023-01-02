@@ -15,7 +15,7 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Right small block posts projects loop begins here
-		$lead_training_post1 = get_field ( 'training_block_1_category' );
+		$lead_training_post1 = get_field ( 'training_block_1_right_post' );
 											$tcondition1 = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
