@@ -27,6 +27,10 @@
 <?php get_template_part( 'template-parts/theme/components/adshead' );?>
 <!-- End Ad head scripts -->
 
+<!---- Google analytics ---->
+<?php get_field( 'google_analytics','option' );?>
+<!-- End Google analytics --->
+
 </head>
 <?php $enable_header_on = get_field('header_on','option');?>
 <?php if($enable_header_on):?>
