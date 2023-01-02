@@ -21,14 +21,7 @@
                                                 "post_status"         => "publish",
                                                 "orderby"             => "date",
                                                 "posts_per_page"      => 1,
-												'tag__not_in' => array( 62),
-												'tax_query' => array(
-													array(
-													  'taxonomy' => 'post',
-													  'field'    => 'ids', 
-													  'terms'    => $lead_training_post1,
-													),
-												),
+												'tag_id'              => $lead_training_post1
 												);                                           
                                           $tblock1 = new WP_Query ($tcondition1);
                                           if ($tblock1->have_posts()) :
