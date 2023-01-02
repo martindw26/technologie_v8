@@ -16,7 +16,7 @@
 		endif; ?>
 		<?php // Right small block posts projects loop begins here
 		$training_category1 = get_field ( 'training_block_1_category' );
-											$condition = array(
+											$tcondition1 = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
                                                 "orderby"             => "date",
