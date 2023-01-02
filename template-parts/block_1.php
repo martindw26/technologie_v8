@@ -64,7 +64,7 @@
 										"orderby"             => "date",
 										"offset"              => $block1Offset,
                                         'post__not_in'		  => $training_block_1_left_post_exclude,
-										"posts_per_page"      => 3
+										"posts_per_page"      => 3,
 										'tax_query' => array(
 											array(
 											'taxonomy' => 'category',
