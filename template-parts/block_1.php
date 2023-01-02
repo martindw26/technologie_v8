@@ -62,7 +62,7 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Left block posts projects loop begins here
-        $training_category2 = get_field ( 'training_block_2_category' );
+        $training_category1 = get_field ( 'training_block_1_category' );
 		$tblock1Offset = get_field ( 'tblock1Offset' );
 		$tcondition2 = array(
 										"post_type"           => "post",
@@ -74,7 +74,7 @@
 											array(
 											'taxonomy' => 'category',
 											'field'    => 'term_id', 
-											'terms'    => $training_category2,
+											'terms'    => $training_category1,
 											),
 										),
 										);                                           
@@ -112,7 +112,7 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Left block posts projects loop begins here
-         $training_category2 = get_field ( 'training_block_2_category' );
+         $training_category1 = get_field ( 'training_block_1_category' );
          $block1Offset = get_field ( 'block_2_right_offset' );
          $tcondition2 = array(
                                          "post_type"           => "post",
@@ -124,7 +124,7 @@
                                              array(
                                              'taxonomy' => 'category',
                                              'field'    => 'term_id', 
-                                             'terms'    => $training_category2,
+                                             'terms'    => $training_category1,
                                              ),
                                          ),
                                          );                                           
