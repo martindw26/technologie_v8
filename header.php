@@ -28,7 +28,10 @@
 <!-- End Ad head scripts -->
 
 <!---- Google analytics ---->
-<?php get_field( 'google_analytics','option' );?>
+<?php
+$GA  = get_field( 'google_analytics','option' );
+echo $GA;
+?>
 <!-- End Google analytics --->
 
 </head>
