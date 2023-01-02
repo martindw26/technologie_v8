@@ -26,7 +26,7 @@
         
                             );
         
-                        $tcondition1 = new WP_Query($args);
+                        $tcondition1 = new WP_Query($tcondition1);
         
         if ($tcondition1-> have_posts()) :
         
