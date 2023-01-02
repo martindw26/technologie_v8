@@ -16,10 +16,12 @@
 		endif; ?>
 		<?php // Right small block posts projects loop begins here
 		$lead_training_post1 = get_field ( 'training_block_1_right_post' );
+        $training_block_1_left_post_exclude = get_field ( 'training_block_1_left_post_exclude' );
 											$tcondition1 = array(
                                                 'post_type' 			=> 'post',
                                                 'post_status' 			=> 'publish',
-                                                'post__in'				=> $lead_training_post1
+                                                'post__in'				=> $lead_training_post1,
+                                                'post__not_in'			=> $training_block_1_left_post_exclude
                             
                                                 );                                       
                                           $tblock1 = new WP_Query ($tcondition1);
