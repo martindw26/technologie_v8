@@ -117,7 +117,7 @@
          $tcondition2 = array(
                                          "post_type"           => "post",
                                          "post_status"         => "publish",
-                                         "orderby"             => "date",
+                                         "orderby"             => "title",
                                          "offset"             => $block1Offset,
                                          "posts_per_page"      => 3,
                                          'tax_query' => array(
