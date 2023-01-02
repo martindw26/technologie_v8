@@ -16,21 +16,15 @@
 		endif; ?>
 		<?php // Right small block posts projects loop begins here
 		$lead_training_post1 = get_field ( 'training_block_1_right_post' );
-
-        //relared post loop begins here
-        
-        $tcondition1 = array(
-                            'post_type' 			=> 'post',
-                            'post_status' 			=> 'publish',
-                            'post__in'				=> $lead_training_post1
-        
-                            );
-        
-                        $tcondition1 = new WP_Query($tcondition1);
-        
-        if ($tcondition1-> have_posts()) :
-        
-            while ($tcondition1->have_posts()) : $tcondition1->the_post();
+											$tcondition1 = array(
+                                                'post_type' 			=> 'post',
+                                                'post_status' 			=> 'publish',
+                                                'post__in'				=> $lead_training_post1
+                            
+                                                );                                       
+                                          $tblock1 = new WP_Query ($tcondition1);
+                                          if ($tblock1->have_posts()) :
+                                          while ($tblock1->have_posts()) : $tblock1->the_post();?>
 
 
 <div class="card rounded rounded-0 border border-0 shadow-sm p-3 mb-2 bg-body rounded" style="min-height:600px; max-height:670px;"><!-- non-fetured block-->
