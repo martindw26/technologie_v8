@@ -6,46 +6,6 @@
 	<div class="row">
 	<div class="col-lg-6">
 
-
-
-<?php if (have_posts()) : while (have_posts()) : the_post();
-		the_content();
-		endwhile;
-		else :
-		echo '<p>No content found</p>';
-		endif; ?>
-		<?php // Right small block posts projects loop begins here
-		$lead_training_post1 = get_field ( 'training_block_1_right_post' );
-											$tcondition1 = array(
-                                                'post_type' 			=> 'post',
-                                                'post_status' 			=> 'publish',
-                                                'post__in'				=> $lead_training_post1,
-                                                
-                            
-                                                );                                       
-                                          $tblock1 = new WP_Query ($tcondition1);
-                                          if ($tblock1->have_posts()) :
-                                          while ($tblock1->have_posts()) : $tblock1->the_post();?>
-
-
-<div class="card rounded rounded-0 border border-0 shadow-sm p-3 mb-2 bg-body rounded" style="min-height:600px; max-height:670px;"><!-- non-fetured block-->
-<?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
-<img class="card-img-top rounded rounded-1 featured" src="<?php echo $url ?>" alt="Card image cap" style=" object-fit: cover; height:300px">  <div class="card-body">
-    <h4 class="card-title fw-bold"><?php echo get_the_title();?></h4>
-				<h5 class="mb-4" style="height:25px";>
-				</h5>
-
-		<div class="card-text text-muted small">
-							Article by: <i><?php echo get_the_author();?></i>,  Posted: <i><?php echo get_the_date();?></i><?php if($read_time):?> | <?php echo $read_time ?><?php endif ?></i>
-						</div><br>
-						<p class="mb-3">&#34;<?php echo excerpt(25);?>&#34;</p>
-    <a href="<?php the_permalink() ?>" class="btn btn-dark text-white">Read More</a>
-  </div>
-</div>
-</div>
-
-<?php endwhile;  else :  endif; wp_reset_postdata();?>
-
 <div class="col-lg-6">
 
 <?php if (have_posts()) : while (have_posts()) : the_post();
