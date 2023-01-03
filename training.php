@@ -81,8 +81,7 @@
 
 
         </div>	
-            <?php endwhile; ?>
-            <?php endif; wp_reset_postdata();?>
+        <?php endwhile;  else :  endif; wp_reset_postdata();wp_reset_query();?>
 
           </div>
 
