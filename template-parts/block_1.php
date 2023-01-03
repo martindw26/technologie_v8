@@ -14,8 +14,8 @@
 		echo '<p>No content found</p>';
 		endif; ?>
 		<?php // Left block posts projects loop begins here
-        $training_category1 = get_field ( 'training_block_1_category' );
-        $training_block_1_left_post_exclude = get_field ( 'training_block_1_left_post_exclude' );
+    $training_category1 = get_field ( 'training_block_1_category' );
+    $training_block_1_left_post_exclude = get_field ( 'training_block_1_left_post_exclude' );
 		$tblock1Offset = get_field ( 'tblock1Offset' );
 		$tcondition2 = array(
                                     'orderby' => 'meta_value_num',
@@ -105,16 +105,15 @@
 		<?php endwhile;  else :  endif; wp_reset_postdata();wp_reset_query();?>
 				</div>
 
-<div class="sidebar col-lg-4 col-md-4 p-2">
-
 <!-- Category sidebar search-->
 <?php get_template_part('includes/section','search');?>
 <!-- End Category sidebar search-->
 
 <!-- Start of posts sidebar related posts-->
 <?php get_template_part( 'template-parts/generic_sidebar' );?>
-<!-- End of posts sidebar related posts-->        
+<!-- End of posts sidebar related posts-->      
 
+<div class="sidebar col-lg-4 col-md-4 p-2">
 
 <div class="col-lg-6">
 
