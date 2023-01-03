@@ -4,17 +4,9 @@
 
 <?php get_header();?>
 
-                        <!-- Header adslot-->
-                        <?php get_template_part( 'template-parts/landing_page_ads/homepage_header_top_slot_ad' );?>
-                        <!-- End Featured Post-->
-
                         <!-- Post Block 1-->
                         <?php get_template_part('template-parts/block_1');?><hr class="container">
                         <!-- End of Post Block--> 
-
-                        <!-- Header middle adslot-->
-                        <?php get_template_part( 'template-parts/landing_page_ads/homepage_header_middle_slot_ad' );?>
-                        <!-- End Header middle adslot-->
 
                         </div>
                     </div>
