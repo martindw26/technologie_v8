@@ -6,8 +6,6 @@
 <div class="row">
 <div class="col-lg-8 p-lg-2">
 
-
-
 <?php if (have_posts()) : while (have_posts()) : the_post();
 		the_content();
 		endwhile;
@@ -46,19 +44,6 @@
 </div>
 
 <?php endwhile;  else :  endif; wp_reset_postdata();?>
-
-</div>
-
-<div class="sidebar col-lg-4 col-md-4 p-2">
-
-<!-- Category sidebar search-->
-<?php get_template_part('includes/section','search');?>
-<!-- End Category sidebar search-->
-
-<!-- Start of posts sidebar related posts-->
-<?php get_template_part( 'template-parts/generic_sidebar' );?>
-<!-- End of posts sidebar related posts-->        
-</div>
 
 <div class="col-lg-8 p-lg-2">
 
@@ -108,7 +93,17 @@
 </div>
 </div>
 		<?php endwhile;  else :  endif; wp_reset_postdata();wp_reset_query();?>
+				</div>
 
+<div class="sidebar col-lg-4 col-md-4 p-2">
+
+<!-- Category sidebar search-->
+<?php get_template_part('includes/section','search');?>
+<!-- End Category sidebar search-->
+
+<!-- Start of posts sidebar related posts-->
+<?php get_template_part( 'template-parts/generic_sidebar' );?>
+<!-- End of posts sidebar related posts-->        
 
 
 <div class="col-lg-6">
