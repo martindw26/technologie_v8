@@ -8,6 +8,10 @@
 
         <div class="row">
 
+        <div class="non_featured_block_home_page">
+	
+    <div class="col-lg-8 p-lg-2 bg-white text-dark">
+
         <?php if (have_posts()) : while (have_posts()) : the_post();
 		the_content();
 		endwhile;
@@ -36,9 +40,7 @@
 								$tblock2 = new WP_Query ($tcondition2);
 								if ($tblock2->have_posts()) :
 								while ($tblock2->have_posts()) : $tblock2->the_post();?>
-        <div class="non_featured_block_home_page">
-	
-          <div class="col-lg-8 p-lg-2 bg-white text-dark">
+       
 
 
             <h1 class=" display-2 font-weight-bold text-dark" style=""><?php echo esc_html( get_the_title() );?></h1>
