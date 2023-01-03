@@ -6,8 +6,6 @@
 	<div class="row">
 	<div class="col-lg-6">
 
-<div class="col-lg-6">
-
 <?php if (have_posts()) : while (have_posts()) : the_post();
 		the_content();
 		endwhile;
