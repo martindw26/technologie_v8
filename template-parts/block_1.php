@@ -97,6 +97,16 @@
 		<?php endwhile;  else :  endif; wp_reset_postdata();wp_reset_query();?>
 				</div>
 
+<div class="sidebar col-lg-4 col-md-4 p-2">
+
+<!-- Category sidebar search-->
+<?php get_template_part('includes/section','search');?>
+<!-- End Category sidebar search-->
+
+<!-- Start of posts sidebar related posts-->
+<?php get_template_part( 'template-parts/generic_sidebar' );?>
+<!-- End of posts sidebar related posts-->        
+</div>
 
 
 <div class="col-lg-6">
@@ -155,13 +165,3 @@
 <a href="<?php echo $tBlock1MoreURL;?>" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More <?php echo $trainingblock1title;?> tutorials</a>
 </div>
 
-<div class="sidebar col-lg-4 col-md-4 p-2">
-
-<!-- Category sidebar search-->
-<?php get_template_part('includes/section','search');?>
-<!-- End Category sidebar search-->
-
-<!-- Start of posts sidebar related posts-->
-<?php get_template_part( 'template-parts/generic_sidebar' );?>
-<!-- End of posts sidebar related posts-->        
-</div>
