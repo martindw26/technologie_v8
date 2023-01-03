@@ -1,10 +1,10 @@
 <div class="container">
-	<?php $trainingblock1title = get_field ( 'trainingblock1title' );?>
-	<h2 class=" post_block_title text-dark"><i><?php echo $trainingblock1title;?></i></h2>
+<?php $trainingblock1title = get_field ( 'trainingblock1title' );?>
+<h2 class=" post_block_title text-dark"><i><?php echo $trainingblock1title;?></i></h2>
 </div>
-<div class="container pt-lg-4 pb-lg-4">
-	<div class="row">
-	<div class="col-lg-8 p-lg-2">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 p-lg-2">
 
 
 
@@ -153,4 +153,15 @@
 <div class="d-flex justify-content-center">
 <?php $tBlock1MoreURL = get_field( 'tBlock1MoreURL' );?>
 <a href="<?php echo $tBlock1MoreURL;?>" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More <?php echo $trainingblock1title;?> tutorials</a>
+</div>
+
+<div class="sidebar col-lg-4 col-md-4 p-2">
+
+<!-- Category sidebar search-->
+<?php get_template_part('includes/section','search');?>
+<!-- End Category sidebar search-->
+
+<!-- Start of posts sidebar related posts-->
+<?php get_template_part( 'template-parts/generic_sidebar' );?>
+<!-- End of posts sidebar related posts-->        
 </div>
