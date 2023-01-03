@@ -14,7 +14,7 @@
                                     'order' => 'ASC',
                                     'post_type' => 'post',
                                     "post_status"    => "publish",
-                                    'posts_per_page' => $NumPosts,
+                                    'posts_per_page' => 10,
                                     'post__not_in' => $training_block_1_post_exclude,
                                     'tax_query' => array(
                                         array(
