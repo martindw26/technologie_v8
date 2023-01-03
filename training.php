@@ -29,48 +29,36 @@
 		} else {
 			echo 'Archives:';
 		}
-	
 	?></h2>
-
              <!-- SEO text-->
-
              <div class=" bg-secondary text-light p-4 mb-4 border-dark lead">
              	<div><?php echo category_description(); ?></div> 
              </div>
-
-
-             <?php if (have_posts()) : while (have_posts()) : the_post();
-		the_content();
-		endwhile;
-		else :
-		echo '<p>No content found</p>';
-		endif; ?>
-		<?php // Left block posts projects loop begins here
-        $training_category1 = get_field ( 'training_block_1_category' );
-        $training_block_1_left_post_exclude = get_field ( 'training_block_1_left_post_exclude' );
-		$tblock1Offset = get_field ( 'tblock1Offset' );
-		$tcondition2 = array(
-                                    'orderby' => 'meta_value_num',
-                                    'order' => 'ASC',
-                                    'post_type' => 'post',
-                                    "post_status"    => "publish",
-                                    'posts_per_page' => 3,
-                                    'post__not_in' => $training_block_1_left_post_exclude,
-                                    'tax_query' => array(
-                                        array(
-                                        'taxonomy' => 'category',
-                                        'field'    => 'term_id', 
-                                        'terms'    => $training_category1
+          <?php while (have_posts()) : the_post(); ?>
+          <?php // Left block posts projects loop begins here
+            $training_category1 = get_field ( 'training_block_1_category' );
+            $training_block_1_left_post_exclude = get_field ( 'training_block_1_left_post_exclude' );
+            $tblock1Offset = get_field ( 'tblock1Offset' );
+            $tcondition2 = array(
+                                        'orderby' => 'meta_value_num',
+                                        'order' => 'ASC',
+                                        'post_type' => 'post',
+                                        "post_status"    => "publish",
+                                        'posts_per_page' => 3,
+                                        'post__not_in' => $training_block_1_left_post_exclude,
+                                        'tax_query' => array(
+                                            array(
+                                            'taxonomy' => 'category',
+                                            'field'    => 'term_id', 
+                                            'terms'    => $training_category1
+                                            )
                                         )
-                                    )
-										);                                           
-								$tblock2 = new WP_Query ($tcondition2);
-								if ($tblock2->have_posts()) :
-								while ($tblock2->have_posts()) : $tblock2->the_post();?>
+                                            );                                           
+            $tblock2 = new WP_Query ($tcondition2);
+            if ($tblock2->have_posts()) :
+            while ($tblock2->have_posts()) : $tblock2->the_post();?>
         <div class="col-md">
-
 <div class="container mt-3 border-border border-0 shadow-sm p-3 mb-5 bg-body rounded">
-
 <div class="row"><!-- block left-->
     <div class="col-md-6 col-sm bg-white text-dark">
     <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
