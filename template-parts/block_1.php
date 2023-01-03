@@ -4,7 +4,7 @@
 </div>
 <div class="container pt-lg-4 pb-lg-4">
 	<div class="row">
-	<div class="col-lg-6">
+	<div class="col-lg-8 p-lg-2">
 
 
 
@@ -19,6 +19,7 @@
 											$tcondition1 = array(
                                                 'post_type' 			=> 'post',
                                                 'post_status' 			=> 'publish',
+                                                'post_per_page' 			=> 3,
                                                 'post__in'				=> $lead_training_post1,
                                                 
                             
