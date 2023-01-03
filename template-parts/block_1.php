@@ -37,6 +37,9 @@
 								while ($tblock2->have_posts()) : $tblock2->the_post();?>
 <div class="non_featured_block_home_page">
 
+<div class="sidebar col-lg-4 col-md-4 p-2">
+<p>sidebar</p>
+</div>
 
 <div class="container shadow-sm p-3 mb-2 bg-body rounded" style="height:195px;"><!-- small non-fetured block-->
 
