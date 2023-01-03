@@ -47,7 +47,7 @@
 
 <?php endwhile;  else :  endif; wp_reset_postdata();?>
 
-<div class="col-lg-6">
+<div class="col-lg-8 p-lg-2">
 
 <?php if (have_posts()) : while (have_posts()) : the_post();
 		the_content();
