@@ -22,8 +22,6 @@
 
         <div class="col-md">
 
-
-
 <div class="container mt-3 border-border border-0 shadow-sm p-3 mb-5 bg-body rounded">
 
 <!-- Post Block 1-->

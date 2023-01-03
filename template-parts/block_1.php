@@ -2,7 +2,7 @@
 	<?php $trainingblock1title = get_field ( 'trainingblock1title' );?>
 	<h2 class=" post_block_title text-dark"><i><?php echo $trainingblock1title;?></i></h2>
 </div>
-<div class="container pt-lg-4 pb-lg-4">
+<div class="col-lg-8 p-lg-2">
 	<div class="row">
 	<div class="col-lg-6">
 
