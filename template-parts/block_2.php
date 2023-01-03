@@ -8,13 +8,12 @@
         $training_category1 = get_field ( 'training_block_1_category' );
         $training_block_1_post_exclude = get_field ( 'training_block_1_post_exclude' );
 		$tblock1Offset = get_field ( 'tblock1Offset' );
-        $NumPosts = get_field ( 'NumPosts' );
 		$tcondition2 = array(
                                     'orderby' => 'meta_value_num',
                                     'order' => 'ASC',
                                     'post_type' => 'post',
                                     "post_status"    => "publish",
-                                    'posts_per_page' => 10,
+                                    'posts_per_page' => 3,
                                     'post__not_in' => $training_block_1_post_exclude,
                                     'tax_query' => array(
                                         array(
