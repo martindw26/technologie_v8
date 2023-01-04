@@ -1,7 +1,7 @@
-<?php
-  get_header();
+<?php 
+get_header();
 /*Template name: Training*/
-?>  
+?>
 
 <div class="container">
         <div class="row">
@@ -23,8 +23,7 @@
 
 
 
-
-
+        </div>
 
           </div>
 
