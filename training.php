@@ -10,10 +10,6 @@
                 <div class="col-md">
                     <div class="container mt-3 border-border border-0 p-3 rounded">
                     <h2 class="p-2 text-dark">Training</h2>
-                                 <!-- SEO text-->
-                                <div class=" bg-secondary text-light p-4 mb-4 border-dark lead">
-             	                <div><?php echo category_description(); ?></div> 
-                                </div>
                             <!-- Post Block 1-->
                             <?php get_template_part('template-parts/block_2');?>
                             <!-- End of Post Block--> 
