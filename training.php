@@ -36,11 +36,6 @@
         </div>
 </div>
 
-</div> 
-
-
-
-
 
 <div class="sidebar col-lg-4 col-md-4 p-2">
         <!-- Category sidebar search-->
@@ -51,7 +46,6 @@
         <!-- End of posts sidebar related posts-->        
 </div> 
 
-</div> 
 </div> 
 </div> 
 
