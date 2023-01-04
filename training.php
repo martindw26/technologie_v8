@@ -7,26 +7,9 @@
 
 <div class="col-lg-8 p-lg-2">
 
-  <h2 class="p-2 text-dark"><?php
-if ( is_category() ) {
-  single_cat_title('Latest ');
-} elseif ( is_tag() ) {
-  single_cat_title('Latest tags: ');
-} elseif ( is_author() ) {
-  the_post();
-  echo 'Author Archives: ' . get_the_author();
-  rewind_posts();
-} elseif ( is_day() ) {
-  echo 'Daily Archives: ' . get_the_date();
-} elseif ( is_month() ) {
-  echo 'Monthly Archives: ' . get_the_date('F Y');
-} elseif ( is_year() ) {
-  echo 'Yearly Archives: ' . get_the_date('Y');
-} else {
-  echo 'Archives:';
-}
+  <h2 class="p-2 text-dark"></h2>
 
-?></h2>
+</div>
 
 <div class="container">
         <div class="row">
