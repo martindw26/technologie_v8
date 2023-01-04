@@ -15,7 +15,7 @@
 <div class="container mt-3 border-border border-0 shadow-sm p-3 mb-5 bg-body rounded">
 
 <!-- Post Block 1-->
-<?php get_template_part('template-parts/block_2');?><hr class="container">
+<?php get_template_part('template-parts/block_2');?>
 <!-- End of Post Block--> 
 <br>
 </div>
@@ -34,7 +34,7 @@
 <!-- Start of posts sidebar related posts-->
 <?php get_template_part( 'template-parts/generic_sidebar' );?>
 <!-- End of posts sidebar related posts-->        
-</div>
+
 
 </div>               
 
