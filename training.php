@@ -20,19 +20,12 @@
 </div>
 
 <div class="sidebar col-lg-4 col-md-4 p-2">
-
-<!-- Category sidebar search-->
-<?php get_template_part('includes/section','search');?>
-<!-- End Category sidebar search-->
-
-<!-- Start of posts sidebar related posts-->
-<?php get_template_part( 'template-parts/generic_sidebar' );?>
-<!-- End of posts sidebar related posts-->        
-
-
+        <!-- Category sidebar search-->
+        <?php get_template_part('includes/section','search');?>
+        <!-- End Category sidebar search-->
+        <!-- Start of posts sidebar related posts-->
+        <?php get_template_part( 'template-parts/generic_sidebar' );?>
+        <!-- End of posts sidebar related posts-->        
 </div>               
-
-</div>
-
 
 <?php get_footer();?>
