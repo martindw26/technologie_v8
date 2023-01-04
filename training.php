@@ -20,6 +20,9 @@
         </div>
 </div>
 
+</div> 
+
+</div> 
 
 <div class="container">
         <div class="row">
@@ -40,7 +43,7 @@
 </div> 
 
 </div> 
-</div> 
+
 
 
 <div class="sidebar col-lg-4 col-md-4 p-2">
