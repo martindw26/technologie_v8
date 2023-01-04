@@ -41,11 +41,7 @@
 
 </div> 
 </div> 
-</div> 
 
-</div> 
-</div> 
-</div> 
 
 <div class="sidebar col-lg-4 col-md-4 p-2">
         <!-- Category sidebar search-->
