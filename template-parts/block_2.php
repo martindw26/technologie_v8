@@ -28,20 +28,34 @@
                             if ($tblock2->have_posts()) :
                             while ($tblock2->have_posts()) : $tblock2->the_post();?>
       <div class="non_featured_block_home_page">
-          <div class="container shadow-sm p-3 mb-2 bg-body rounded" style="height:195px;"><!-- small non-fetured block-->
-                <div class="row">
-                    <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
-                          <div class="col"><img class="img-fluid featured rounded rounded-1" src="<?php echo $url ?>" style="height:150px";>
-                          </div>
-                                <div class="col-6">
-                                      <h4 class="card-title fw-bold"><?php echo get_the_title();?></h4>
-	                                    <p class="card-text text-muted">Article by: <?php echo get_the_author();?></i>,   Posted: <i><?php echo get_the_date();?></i><?php if($read_time):?> | Read time: <?php echo $read_time ?><?php endif ?></p>
-	                                    <a href="<?php the_permalink() ?>" class="btn btn-sm btn-dark text-white m-0">Read More</a></div>
+      <div class="col-md">
 
-                                </div>
-                  </div>
-            </div>
-      </div>
+
+
+<div class="container mt-3 border-border border-0 shadow-sm p-3 mb-5 bg-body rounded">
+
+<div class="row"><!-- block left-->
+    <div class="col-md-6 col-sm bg-white text-dark">
+    <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
+      <img class="img-fluid p-1 rounded-1" src="<?php echo $url ?>"/>
+    </div><!-- End block right-->
+    <div class="col-md-6 col-sm bg-white text-dark p-2"><!-- block right-->
+ <h5 class="card-title"><?php echo get_the_title();?></h5>
+
+
+<p class="p-1 text-dark">&ldquo;<?php echo excerpt(15);?>&rdquo;</p>
+        <p class="card-text"><small class="text-dark"><?php echo get_the_date();?></small></p>
+<a href="<?php the_permalink() ?>" class="btn btn-sm btn-dark text-white m-0">Read More</a>
+
+    </div><!-- End block right-->
+<br>
+  </div>
+</div>
+
+
+
+
+        </div>	
 		        <?php endwhile;  else :  endif; wp_reset_postdata();wp_reset_query();?>
 </div>
 
