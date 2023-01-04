@@ -33,6 +33,10 @@
         <!-- Start of posts sidebar related posts-->
         <?php get_template_part( 'template-parts/generic_sidebar' );?>
         <!-- End of posts sidebar related posts-->        
-</div>               
+</div> 
+
+</div> 
+</div> 
+</div> 
 
 <?php get_footer();?>
