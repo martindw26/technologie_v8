@@ -13,13 +13,13 @@
                             <?php get_template_part('template-parts/block_1');?>
                             <!-- End of Post Block--> 
                         <br>
-                        <h2 class="p-2 text-dark"><?php the_field( 'trainingblock1title' );?></h2>
-                            <!-- Post Block 1-->
-                            <?php get_template_part('template-parts/block_1');?>
-                            <!-- End of Post Block--> 
                         <br>
                     </div>
                 </div>
+                <h2 class="p-2 text-dark"><?php the_field( 'trainingblock1title' );?></h2>
+                            <!-- Post Block 1-->
+                            <?php get_template_part('template-parts/block_1');?>
+                            <!-- End of Post Block--> 
             </div>	
 
         </div>
