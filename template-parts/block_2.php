@@ -32,7 +32,7 @@
 
 
 
-<div class="container mt-3 border-border border-0 p-3 mb-5 rounded">
+<div class="container mt-3 border-border border-0 p-3 rounded">
 
 <div class="row"><!-- block left-->
     <div class="col-md-6 col-sm bg-white text-dark">

@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-lg-8 p-lg-2">
                 <div class="col-md">
-                    <div class="container mt-3 border-border border-0 p-3 mb-5 rounded">
+                    <div class="container mt-3 border-border border-0 p-3 mb-2 rounded">
                             <!-- Post Block 1-->
                             <?php get_template_part('template-parts/block_2');?>
                             <!-- End of Post Block--> 
