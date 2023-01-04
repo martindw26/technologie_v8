@@ -45,6 +45,6 @@
 </div>
 </div>	
 <?php endwhile;  else :  endif; wp_reset_postdata();wp_reset_query();?>
-
+</div>
 
 
