@@ -26,7 +26,7 @@
                         $tblock1 = new WP_Query ($tcondition1);
                         if ($tblock1->have_posts()) :
                         while ($tblock1->have_posts()) : $tblock1->the_post();?>
-  <div class="non_featured_block_home_page">
+
   <div class="col-md">
 
 <div class="container border-border border-0 p-3 rounded">
@@ -45,6 +45,6 @@
 </div>
 </div>	
 <?php endwhile;  else :  endif; wp_reset_postdata();wp_reset_query();?>
-</div>
+
 
 
