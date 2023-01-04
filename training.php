@@ -15,8 +15,8 @@
                             <!-- End of Post Block--> 
                         <br>
                     </div>
+                    block 2
                 </div>
-                block 2
             </div>	
 
         </div>
