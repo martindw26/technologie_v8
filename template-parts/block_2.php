@@ -1,4 +1,4 @@
-<div class="col-lg-8 p-lg-2">
+<div class="col-lg p-lg-2">
 
 <?php if (have_posts()) : while (have_posts()) : the_post();
 		the_content();
