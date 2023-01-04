@@ -11,7 +11,7 @@
                     <div class="container mt-3 border-border border-0 p-3 rounded">
                     <h2 class="p-2 text-dark"><?php the_field( 'traininghubtitle' );?></h2>
                             <!-- Post Block 1-->
-                            <?php get_template_part('template-parts/training-Hub');?>
+                            <?php get_template_part('template-parts/training-Hub-Blocks');?>
                             <!-- End of Post Block--> 
                         <br>
                     </div>
