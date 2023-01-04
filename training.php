@@ -4,16 +4,10 @@
 
 <?php get_header();?>
 
-
-<div class="col-lg-8 p-lg-2">
-
-  <h2 class="p-2 text-dark">
-    Training
-  </h2>
-
-</div>
-
 <div class="container">
+
+<h2 class="p-2 text-dark">Training</h2>
+
         <div class="row">
             <div class="col-lg-8 p-lg-2">
                 <div class="col-md">
