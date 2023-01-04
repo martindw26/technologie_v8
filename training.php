@@ -7,7 +7,9 @@
 
 <div class="col-lg-8 p-lg-2">
 
-  <h2 class="p-2 text-dark"></h2>
+  <h2 class="p-2 text-dark">
+    Training
+  </h2>
 
 </div>
 
