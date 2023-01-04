@@ -30,7 +30,7 @@
   <div class="non_featured_block_home_page">
   <div class="col-md">
 
-<div class="container mt-3 border-border border-0 p-3 rounded">
+<div class="container border-border border-0 p-3 rounded">
 <div class="row"><!-- block left-->
 <div class="col-md-6 col-sm bg-white text-dark">
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
