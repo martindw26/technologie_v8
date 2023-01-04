@@ -16,8 +16,9 @@
                         <br>
                     </div>
                 </div>
+                block 2
             </div>	
-        block 2
+
         </div>
 </div>
 
