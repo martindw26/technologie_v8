@@ -1,5 +1,5 @@
 <?php
-/*Template name: Training hub page*/
+/*Template name: Training*/
 ?>
 
 <?php get_header();?>
