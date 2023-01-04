@@ -7,8 +7,6 @@
 
 <div class="col-lg-8 p-lg-2">
 
-<?php if (have_posts()) : ?>
-
   <h2 class="p-2 text-dark"><?php
 if ( is_category() ) {
   single_cat_title('Latest ');
@@ -29,15 +27,6 @@ if ( is_category() ) {
 }
 
 ?></h2>
-
-   <!-- SEO text-->
-
-   <div class=" bg-secondary text-light p-4 mb-4 border-dark lead">
-       <div><?php echo category_description(); ?></div> 
-   </div>
-
-
-<?php while (have_posts()) : the_post(); ?>
 
 <div class="container">
         <div class="row">
