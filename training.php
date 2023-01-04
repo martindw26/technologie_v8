@@ -15,7 +15,10 @@
                             <!-- End of Post Block--> 
                         <br>
                     </div>
-                    block 2
+                    <h2 class="p-2 text-dark"><?php the_field( 'trainingblock1title' );?></h2>
+                            <!-- Post Block 1-->
+                            <?php get_template_part('template-parts/block_2');?>
+                            <!-- End of Post Block--> 
                 </div>
             </div>	
 
