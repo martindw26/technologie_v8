@@ -8,8 +8,8 @@
         <div class="row">
             <div class="col-lg-8 p-lg-2">
                 <div class="col-md">
-                <h2 class="p-2 text-dark">Training</h2>
                     <div class="container mt-3 border-border border-0 p-3 rounded">
+                    <h2 class="p-2 text-dark">Training</h2>
                             <!-- Post Block 1-->
                             <?php get_template_part('template-parts/block_2');?>
                             <!-- End of Post Block--> 
