@@ -9,4 +9,13 @@
 
 .topnav li a{
     padding: .25rem 0rem;
+    color: white;
+}
+
+.topnav li:first-child a {
+    padding-left: 0;
+}
+
+.topnav li:last-child a {
+    padding-left: 0;
 }
