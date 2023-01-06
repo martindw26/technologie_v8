@@ -50,3 +50,20 @@
       text-align: left;
     }
   }
+
+
+/* Hide topnav-desktop on mobile */ 
+
+  @media screen and (min-width: 480px) {
+    .topnav-desktop{
+      display: none!important;
+    }
+  }
+
+  /* Hide topnav-mobile on desktop */ 
+
+  @media screen and (max-width: 480px) {
+    .topnav-mobile{
+      display: none!important;
+    }
+  }

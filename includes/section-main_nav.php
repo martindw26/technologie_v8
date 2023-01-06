@@ -1,5 +1,7 @@
 <div class="container">
-<div class="topnav">
+
+
+<div class="topnav-desktop">
 	<?php
 	wp_nav_menu(
 		array(
@@ -9,4 +11,17 @@
 		);
 	?>
 </div>
+
+<div class="topnav-mobile">
+	<?php
+	wp_nav_menu(
+		array(
+		'theme_location' => 'mobile',
+		'menu_class' => 'topnav-mobile' 
+		)
+		);
+	?>
+</div>
+
+
 </div>
