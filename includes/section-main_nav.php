@@ -13,6 +13,9 @@
 </div>
 
 <div class="topnav-mobile">
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
 	<?php
 	wp_nav_menu(
 		array(
@@ -21,6 +24,8 @@
 		)
 		);
 	?>
+</div>
+</div>
 </div>
 
 
