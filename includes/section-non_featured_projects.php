@@ -16,7 +16,7 @@
 		endif; ?>
 		<?php // Right small block posts projects loop begins here
 		$category2 = get_field ( 'block_2_category' );
-											$condition = array(
+											$condition3 = array(
                                                 "post_type"           => "post",
                                                 "post_status"         => "publish",
                                                 "orderby"             => "date",
@@ -30,12 +30,12 @@
 													),
 												),
 												);                                           
-                                          $block1 = new WP_Query ($condition);
-                                          if ($block1->have_posts()) :
-                                          while ($block1->have_posts()) : $block1->the_post();?>
+                                          $block4 = new WP_Query ($condition3);
+                                          if ($block4->have_posts()) :
+                                          while ($block4->have_posts()) : $block4->the_post();?>
 
 
-<div class="card rounded rounded-0 border border-0 shadow-sm p-3 mb-2 bg-body rounded" style="min-height:600px; max-height:670px;"><!-- non-fetured block-->
+<div class="card rounded rounded-0 border border-0 shadow-sm p-3 mb-2 bg-body rounded" style="max-height:600px;"><!-- non-fetured block-->
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
 <img class="card-img-top rounded rounded-1 featured" src="<?php echo $url ?>" alt="Card image cap" style=" object-fit: cover; height:300px">  <div class="card-body">
     <h4 class="card-title fw-bold"><?php echo get_the_title();?></h4>
@@ -76,12 +76,12 @@
 		endif; ?>
 		<?php // Left block posts projects loop begins here
         $category2 = get_field ( 'block_2_category' );
-		$block1Offset = get_field ( 'block_2_right_offset' );
-		$condition2 = array(
+		$block2Offset = get_field ( 'block_2_right_offset' );
+		$condition4 = array(
 										"post_type"           => "post",
 										"post_status"         => "publish",
 										"orderby"             => "date",
-										"offset"             => $block1Offset,
+										"offset"             => $block2Offset,
 										"posts_per_page"      => 3,
 										'tax_query' => array(
 											array(
@@ -91,9 +91,9 @@
 											),
 										),
 										);                                           
-								$block2 = new WP_Query ($condition2);
-								if ($block2->have_posts()) :
-								while ($block2->have_posts()) : $block2->the_post();?>
+								$block5 = new WP_Query ($condition4);
+								if ($block5->have_posts()) :
+								while ($block5->have_posts()) : $block5->the_post();?>
 <div class="non_featured_block_home_page">
 
 
@@ -126,12 +126,12 @@
 		endif; ?>
 		<?php // Left block posts projects loop begins here
          $category2 = get_field ( 'block_2_category' );
-		 $block1Offset = get_field ( 'block_2_right_offset' );
-		 $condition2 = array(
+		 $block2Offset = get_field ( 'block_2_right_offset' );
+		 $condition4 = array(
 										 "post_type"           => "post",
 										 "post_status"         => "publish",
 										 "orderby"             => "date",
-										 "offset"             => $block1Offset,
+										 "offset"             => $block2Offset,
 										 "posts_per_page"      => 3,
 										 'tax_query' => array(
 											 array(
@@ -140,10 +140,10 @@
 											 'terms'    => $category2,
 											 ),
 										 ),
-										 );                                
-                                          $block2 = new WP_Query ($condition2);
-                                          if ($block2->have_posts()) :
-                                          while ($block2->have_posts()) : $block2->the_post();?>
+										 );                                      
+                                          $block5 = new WP_Query ($condition4);
+                                          if ($block5->have_posts()) :
+                                          while ($block5->have_posts()) : $block5->the_post();?>
 <div class="non_featured_block_home_page_mobile">
 <div class="card rounded rounded-0 border border-0">
 <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
@@ -181,6 +181,6 @@
 	</div>
 </div><hr class="d-sm-block d-md-none">
 <div class="d-flex justify-content-center">
-<?php $Block2MoreURL = get_field( 'block_2_more_url' );?>
-<a href="<?php echo $Block2MoreURL;?>" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More <?php echo $Block2Title;?></a>
+<?php $Block1MoreURL = get_field( 'block_2_more_url' );?>
+<a href="<?php echo $Block1MoreURL;?>" class="btn btn-white text-black border border-2 border-dark pb-sm-2 fs-5 text">More <?php echo $Block2Title;?></a>
 </div>

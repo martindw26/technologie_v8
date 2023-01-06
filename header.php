@@ -19,20 +19,13 @@
 <?php get_template_part( 'template-parts/helpers/collapse' );?>
 <!-- END Collapse.js -->
 
-<!-- Web console-log-->
-<?php get_template_part( 'template-parts/theme/components/console-log' );?>
-<!-- END console-log -->
+<!-- Web Vitals-->
+<?php get_template_part( 'template-parts/theme/components/web-vitals' );?>
+<!-- END MPU Bottom ad head script -->
 
 <!-- Ad head scripts-->
 <?php get_template_part( 'template-parts/theme/components/adshead' );?>
-<!-- End Ad head scripts -->
-
-<!---- Google analytics ---->
-<?php
-$GA  = get_field( 'google_analytics','option' );
-echo $GA;
-?>
-<!-- End Google analytics --->
+<!-- END MPU Bottom ad head script -->
 
 </head>
 <?php $enable_header_on = get_field('header_on','option');?>
@@ -48,3 +41,10 @@ echo $GA;
 <?php get_template_part('includes/section','logo');?>
 <?php get_template_part('includes/section','main_nav');?>
 </div>
+
+
+
+
+
+
+

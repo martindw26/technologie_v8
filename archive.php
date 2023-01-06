@@ -11,9 +11,9 @@
 
           <?php if (have_posts()) : ?>
 
-            <h2 class="p-2 text-dark"><?php
+            <h2 class="display-2 font-weight-bold text-dark p-2"><?php
 		if ( is_category() ) {
-			single_cat_title('Latest ');
+			single_cat_title(' ');
 		} elseif ( is_tag() ) {
 			single_cat_title('Latest tags: ');
 		} elseif ( is_author() ) {
