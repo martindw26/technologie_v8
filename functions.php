@@ -25,6 +25,7 @@ add_action ('wp_enqueue_scripts','load_swt_css');
 function load_swt_script(){
 
 	wp_enqueue_script( 'bootstrap_bundle_js', "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js", array(),'5.0.2',true);
+    wp_enqueue_script(  'nav_js', get_template_directory_uri() . "/assets/js/nav.js", array(), '1.0', 'all');
 }
 
 add_action ('wp_enqueue_scripts','load_swt_script');
