@@ -79,18 +79,19 @@ if ( function_exists( 'add_theme_support' ) ) {
    *  Registers menus
 --------------------------------------------------- */
 
-function swt_menues() {
+function technologie_menues() {
       
         $locations = array(
-          'primary' => "Desktop Primary Top",
-          'footer_one' => "Footer Menu one",
-          'footer_two' => "Footer Menu two"
+          'primary'     => "Desktop Primary Top",
+          'mobile'      => "Mobile",
+          'footer_one'  => "Footer Menu one",
+          'footer_two'  => "Footer Menu two"
          );
 
      register_nav_menus($locations);
 }
 
-add_action('init','swt_menues');
+add_action('init','technologie_menues');
 
 /* End of Registers menus */
 

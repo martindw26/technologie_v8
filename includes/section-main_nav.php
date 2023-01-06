@@ -1,4 +1,4 @@
-<div class="topnav" id="myTopnav">
+<div class="container">
 <div class="topnav">
 	<?php
 	wp_nav_menu(
@@ -10,4 +10,3 @@
 	?>
 </div>
 </div>
-	
