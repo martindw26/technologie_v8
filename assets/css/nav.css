@@ -1,9 +1,12 @@
 /* Style the top navigation bar */
 
 .topnav{
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-   display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
+.topnav li a{
+    padding: .25rem 0rem;
+}
