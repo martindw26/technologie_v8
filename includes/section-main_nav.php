@@ -13,8 +13,6 @@
 </div>
 
 <div class="topnav-mobile">
-<div class="topnav">
-  <div id="myLinks">
 	<?php
 	wp_nav_menu(
 		array(
@@ -23,11 +21,6 @@
 		)
 		);
 	?>
-</div>
- <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
 </div>
 </div>
 
