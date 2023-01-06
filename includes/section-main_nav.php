@@ -13,9 +13,8 @@
 </div>
 
 <div class="topnav-mobile">
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
+<div class="topnav">
+  <div id="myLinks">
 	<?php
 	wp_nav_menu(
 		array(
