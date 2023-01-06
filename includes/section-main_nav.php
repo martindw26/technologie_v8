@@ -6,7 +6,7 @@
 	wp_nav_menu(
 		array(
 		'theme_location' => 'primary',
-		'menu_class' => 'topnav' 
+		'menu_class' => 'topnav-desktop' 
 		)
 		);
 	?>
