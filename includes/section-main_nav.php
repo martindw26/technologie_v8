@@ -1,28 +1,12 @@
-<div class="container">
 
-
-<div class="topnav-desktop">
+<div class="topnav">
 	<?php
 	wp_nav_menu(
 		array(
 		'theme_location' => 'primary',
-		'menu_class' => 'topnav-desktop' 
+		'menu_class' => 'topnav' 
 		)
 		);
 	?>
-</div>
-
-<div class="topnav-mobile">
-	<?php
-	wp_nav_menu(
-		array(
-		'theme_location' => 'mobile',
-		'menu_class' => 'topnav-mobile' 
-		)
-		);
-	?>
-</div>
-</div>
-
-
-</div>
+	</div>
+	
