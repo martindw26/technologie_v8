@@ -7,9 +7,10 @@
 		}
 	?>
 </h3><hr>
-
-<?php get_template_part( 'template-parts/ads_body/top/section/top_mpu_placement' );?>
 <div class="">
+<!-- Top MPU adslot-->
+<?php get_template_part( 'template-parts/ads_body/top/section/top_mpu_placement' );?>
+<!-- End Top MPU adslot -->
 <?php if (have_posts()) : while (have_posts()) : the_post();
 the_content();
 endwhile;
@@ -21,9 +22,9 @@ $condition = array(
 "post_type"          	=> "post",
 "post_status"         	=> "publish",
 "posts_per_page"      	=> 2,
-"orderby"               	=> 'date',
-'offset' 		=> 0,
-'cat' 		=> 2,
+"orderby"               => 'date',
+'offset' 				=> 0,
+'cat' 					=> 2,
 );$block1 = new WP_Query ($condition);
 if ($block1->have_posts()) :
 while ($block1->have_posts()) : $block1->the_post();?>
@@ -49,8 +50,9 @@ while ($block1->have_posts()) : $block1->the_post();?>
 				?>
 				<!-- End catarrayrated -->
 				</p>
-				<p class="mb-3">&#34;<?php echo excerpt(25);?>&#34;
+<p class="mb-3">&#34;<?php echo excerpt(25);?>&#34;
 				</p>
+
 		<div class="card-text text-muted small">
 		Article by: <i><?php echo get_the_author();?></i>,  Posted: <i><?php echo get_the_date();?></i><?php if($read_time):?> | <?php echo $read_time ?><?php endif ?></i>
 		</div><br>
@@ -60,7 +62,10 @@ while ($block1->have_posts()) : $block1->the_post();?>
 </div><br>
 <?php endwhile;  else :  endif; wp_reset_postdata();?>
 
+
 </div>
 </div>
 
+<!-- Bottom MPU adslot-->
 <?php get_template_part( 'template-parts/ads_body/bottom/section/bottom_mpu_placement' );?>
+<!-- End Bottom MPU adslot -->

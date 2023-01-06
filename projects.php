@@ -39,7 +39,7 @@
              </div>
 
              <!-- Article content blocks -->
-             <?php get_template_part('includes/section','reviewprojectpostcontentblocks');?>
+             <?php get_template_part('includes/section','articlepostcontentblocks');?>
              <!-- End Article content blocks-->
 
             <!-- Article content disclaimer block -->

@@ -1,0 +1,7 @@
+<div class="mb-3 mt-1 bg-light border rounded" style="height:670px;>
+
+        <p class="text-middle text-muted"></p>
+            
+        <?php if (function_exists ('adinserter')) echo adinserter (1); ?>
+
+</div>
